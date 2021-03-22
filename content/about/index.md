@@ -7,6 +7,13 @@ draft: false
 Many know me as ninelore, but my real name is Ingo.
 This is my personal Blog, and you should treat everything that you read in my blog posts as opinions if not stated otherwise. 
 
+#### Contact
+- [Email (ninelore@protonmail.com)](mailto:ninelore@protonmail.com)
+- Discord: ninelore#9823
+- [Github](https://github.com/ninelore)
+- [Twitter][https://twitter.com/neinlore]
+
+
 ### Childhood
 Born in the German State of Hesse, I got my first PC with the age of five, and my first contact with Linux with seven years.  
 I lived a very rough childhood with, I dare to say, abuse. Not only i had my own problems, but i had to witness the sorrow and depression of others too. I wont go into details here.
