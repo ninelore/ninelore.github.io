@@ -1,0 +1,4 @@
+baseURL = "https://ninelore.github.io"
+languageCode = "en-us"
+title = "Hi, i'm ninelore"
+theme = "dimension"
