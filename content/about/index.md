@@ -5,7 +5,7 @@ draft: false
 ---
 
 Many know me as ninelore, but my real name is Ingo.
-This is my personal Blog, and you should treat everything you read in my blog posts as opinions if not stated otherwise. 
+This is my personal Blog, and you should treat everything that you read in my blog posts as opinions if not stated otherwise. 
 
 ### Childhood
 Born in the German State of Hesse, I got my first PC with the age of five, and my first contact with Linux with seven years.  
