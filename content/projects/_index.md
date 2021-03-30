@@ -1,6 +1,6 @@
 ---
 title: "Projects"
 description: "My Projects and Guides"
-logo: "/pictures/dove.png"
+logo: "/pictures/back.png"
 ---
 
