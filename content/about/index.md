@@ -26,11 +26,15 @@ I believe these expeiences made me very wise, astute and perfectionist. I have a
   - free speech
   - climate change
   - democracy and the restriction of lobbying
+- Gaming
+  - World of Warcraft
+  - Arma 3
+  - Warframe
+  - Digital Combat Simulator
 - FOSS movement
   - Linux
 - Metal music
 - Photography
 
 
-#### Note
 I might or already have posted a blogpost with details about any topic mentioned here. Be sure to check for it ;)
