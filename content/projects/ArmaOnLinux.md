@@ -51,8 +51,9 @@ This is everything you need to play Arma 3 on Linux without ACRE2 or TFAR. Congr
 
 Make sure you did the command of Point 5.1!
 
-Untar the Proton build [provided here (click me)](https://mega.nz/folder/WgwBxaiY#1wO9JOI6LZKLgAxKlUPkPg) and place the folder extracted form the tarball in `$HOME/.local/share/Steam/compatibilitytools.d/` (create the directory if absent).  
-Restart Steam(!) and go into the Steam game settings of Arma again and change the Proton version the the one we just installed (see the 3rd picture in 2.).
+~~Untar the Proton build provided here (click me) and place the folder extracted form the tarball in `$HOME/.local/share/Steam/compatibilitytools.d/` (create the directory if absent).  
+Restart Steam(!) and go into the Steam game settings of Arma again and change the Proton version the the one we just installed (see the 3rd picture in 2.).~~  
+**Note: this got obsolete with Proton 6.3. Make sure to use the TS Script version 1v13 or newer!**
 
 Place the `Arma3TS-*.sh` [provided here (click me)](https://mega.nz/folder/WgwBxaiY#1wO9JOI6LZKLgAxKlUPkPg) in your home directory.  
 Edit the file and adjust the settings inside the marked area in that file according to the comments.  

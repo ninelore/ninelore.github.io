@@ -1,6 +1,6 @@
 ---
 title: "About me"
-date: 2021-03-22T20:05:21+01:00
+date: 2021-03-20
 draft: false
 ---
 
