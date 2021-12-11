@@ -10,17 +10,20 @@ A few months and improvements to Proton after its first release, i had the first
 
 Since Proton 4.11 as good as all tweaks needed to run Arma became obsolete, and it became as easy as never before to play not only Arma and Steam Games, but also non-Steam games because of many Proton improvements being up streamed to Wine. You can check if your Games are working on the Lutris Website, the WineHQ and the ProtonDB Websites.
 
+With the release of Proton 6.3-8, the last major burden, BattleEye, is now working and we can play Arma 3 on Linux without **any** restriction!  
+The only flaw is the non-working original Launcher, which is no problem due to the excellent work of some amazing people that made amazing 3rd-party launchers.
+
 This new Guide is based on all the knowledge that got collected up until now. This Guide will get continuous Updates
 
 ### 0. Disclaimer
 
-**I don't take any responsibility if any (im)possible damage occurs on your hardware, software or your health, if you lose your job because you were late because your alarm clock didn't ring or if a thermonuclear war breaks out. You are responsible for all changes you are making! Please read everything carefully and if needed twice to prevent Misunderstandings. You can contact me via the Information provided on my [Website](https://ninelore.github.io)**
+**I don't take any responsibility if any (im)possible damage occurs on your hardware, software or your health, if you lose your job because you were late because your alarm clock didn't ring or if a thermonuclear war breaks out. You are responsible for all changes you are making! Please read everything carefully and if needed twice to prevent misunderstandings. You can contact me via the information provided on my [website](https://ninelore.github.io)**
 
 ### 1. Prepare
 
 You should have
-- Basic Terminal/Bash knowledge
-- All Software and Drivers updated
+- Basic terminal/Bash knowledge
+- All software and drivers up to date
 - Already installed Steam and wine-staging to make sure all dependencies are installed
 
 ### 2. Downloading Arma
@@ -71,16 +74,24 @@ Done!
 Install [protontricks via python pipx](https://github.com/Matoking/protontricks#pipx-recommended) and run the following command:  
 `protontricks 107410 d3dcompiler_43 d3dx10_43 d3dx11_43 mfc140 xact_64`
 
-#### 5.2 Arma doesnt open or crashes instantly
+#### 5.2 I still have problems with sound
+You have 2 options to achieve the same fix.   
+Either you can set the env variable `WINEDLLOVERRIDES="xaudio2_7=n"` in the Steam startup options (or via the Arma 3 Unix Launcher). 
+{{< image src="/pictures/armalinux/armalaunchoptions-xaudio.png" >}}  
+The other way is to set it via `protontricks 107410 winecfg` and then under "Libraries".  
+{{< image src="/pictures/armalinux/winecfg-xaudio.png" >}}  
+
+#### 5.3 Arma doesnt open or crashes instantly
 Run the following command depending on your linux distro to install possibly missing dependencies  
 Arch Linux based: `sudo pacman -S vulkan-tools`  
 Debian/Ubuntu based: `sudo apt install mesa-vulkan-drivers vulkan-utils`  
 Fedora: `sudo dnf install mesa-vulkan-drivers vulkan-tools`
 
-#### 5.3 Comman X returns error Y
-Double Check for Software and Driver Updates aswell as the spelling of the Commands and the Settings. If you still got errors continue to 5.99
+#### 5.4 Command X returns error Y
+Double check for software and driver updates as well as the spelling of the commands and the settings. If you still got errors continue to 5.99
 
-#### 5.99 More help is available on the [ArmaOnUnix Discord](https://discord.gg/p28Ra36)
+#### 5.99 I still have a problem
+More help is available on the [ArmaOnUnix Discord](https://discord.gg/p28Ra36)
 
 ### Epilogue
 
