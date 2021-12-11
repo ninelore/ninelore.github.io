@@ -31,7 +31,7 @@ With the time passed I developed a lot of things, mainly quality of life scripts
 
 In Feburary 2021 I got a new laptop with hybrid graphics. Also my private situation changed and I was looking to get a more stable system thats working without much tinkering. I tried very hard to stay with Linux, but in the end there were two factors that forced me to go back:
 - There were several Problems related to Optimus, mainly with the AMD iGPU, and driver problems with the new Renoir iGPU itself.
-- Several pieces of Software i now require are not available on Linux and have no alternative that compliment my needs.
+- Several pieces of software I now require are not available on Linux and have no alternative that compliment my needs.
 - I don't have the time nor the storage space to make a dual-boot system 
 
 After some weeks, I am now a fan of WSL, because it helps me to develope and use my previously started projects like [Arma on Linux](https://ninelore.github.io/projects/#arma-on-linux)
