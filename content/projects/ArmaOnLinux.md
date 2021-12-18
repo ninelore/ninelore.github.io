@@ -24,7 +24,8 @@ This new Guide is based on all the knowledge that got collected up until now. Th
 You should have
 - Basic terminal/Bash knowledge
 - All software and drivers up to date
-- Already installed Steam and wine-staging to make sure all dependencies are installed
+- wine-staging (make sure all dependencies are installed)
+- For BattleEye: Steam beta client (switch via steam settings)
 
 ### 2. Downloading Arma
 
@@ -52,7 +53,7 @@ This is everything you need to play Arma 3 on Linux without ACRE2 or TFAR. Congr
 
 ### 4. ACRE2/TFAR
 
-Make sure you did the command of Point 5.1!
+Make sure you did the command of Chapter 5.1!
 
 ~~Untar the Proton build provided here (link removed) and place the folder extracted form the tarball in `$HOME/.local/share/Steam/compatibilitytools.d/` (create the directory if absent).  
 Restart Steam(!) and go into the Steam game settings of Arma again and change the Proton version the the one we just installed (see the 3rd picture in 2.).~~  
@@ -88,7 +89,7 @@ Debian/Ubuntu based: `sudo apt install mesa-vulkan-drivers vulkan-utils`
 Fedora: `sudo dnf install mesa-vulkan-drivers vulkan-tools`
 
 #### 5.4 Command X returns error Y
-Double check for software and driver updates as well as the spelling of the commands and the settings. If you still got errors continue to 5.99
+Double check for software and driver updates as well as the spelling of the commands and the settings. If you still got errors continue to Chapter 5.99
 
 #### 5.99 I still have a problem
 More help is available on the [ArmaOnUnix Discord](https://discord.gg/p28Ra36)
