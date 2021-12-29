@@ -94,6 +94,22 @@ Double check for software and driver updates as well as the spelling of the comm
 #### 5.99 I still have a problem
 More help is available on the [ArmaOnUnix Discord](https://discord.gg/p28Ra36)
 
+### 6. Increasing Performance
+
+#### 6.1 Additional Launch Parameters
+Try a combination of the following to see what works for you the best. Set them as desired via the Arma 3 Unix Launcher or add them to the Steam command line.
+-  `-noSplash` No splash screens. Very minor game startup speedup.
+-  `-skipIntro` Static Background for main manu. Minor game startup speedup.
+-  `-world=empty` Load an empty world for main menu background. Significant game startup speedup.
+
+-  `-exThreads=3` for 2 CPU cores or `-exThreads=7` for 4 cores or more; Offloads some work onto different threads. usually minor FPS Increase
+-  `-enableHT` enables use of logical cores instead of only physical cores. May improve or harm FPS depending of your PC. Try if it works for you. This is overwritten by `-cpuCount`.
+-  `-hugepages` Enable huge page size for memory allocation. Try if it works for you.
+-  `-noLogs` Not having to write logs may increase performance, but be sure to disable this if you need to troubleshoot problems.
+-  `-malloc=<string>` Use a particular Memory Allocator (for advanced users)(More infos [here](https://community.bistudio.com/wiki/Arma_3:_Custom_Memory_Allocator)).
+
+-  `-cpuCount=1` Reportedly solves some issure for some people but might decrease performance by a noticable amount. NOTE: This is fixed on the arma perf brance and will find its way into the release branch of Arma soon.
+
 ### Epilogue
 
 This Guide was first released in the [Armaworld Forums](https://armaworld.de/forum/thread/4992-ger-eng-arma-on-linux-ninelore-s-guide-acre-tfar-working/?postID=39909#post39909) by me. If you have Feedback or Questions dont hesitate to open a Issue.
