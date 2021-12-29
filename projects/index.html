@@ -114,6 +114,38 @@ Fedora: <code>sudo dnf install mesa-vulkan-drivers vulkan-tools</code></p>
 <p>Double check for software and driver updates as well as the spelling of the commands and the settings. If you still got errors continue to Chapter 5.99</p>
 <h4 id=599-i-still-have-a-problem>5.99 I still have a problem</h4>
 <p>More help is available on the <a href=https://discord.gg/p28Ra36>ArmaOnUnix Discord</a></p>
+<h3 id=6-increasing-performance>6. Increasing Performance</h3>
+<h4 id=61-additional-launch-parameters>6.1 Additional Launch Parameters</h4>
+<p>Try a combination of the following to see what works for you the best. Set them as desired via the Arma 3 Unix Launcher or add them to the Steam command line.</p>
+<ul>
+<li>
+<p><code>-noSplash</code> No splash screens. Very minor game startup speedup.</p>
+</li>
+<li>
+<p><code>-skipIntro</code> Static Background for main manu. Minor game startup speedup.</p>
+</li>
+<li>
+<p><code>-world=empty</code> Load an empty world for main menu background. Significant game startup speedup.</p>
+</li>
+<li>
+<p><code>-exThreads=3</code> for 2 CPU cores or <code>-exThreads=7</code> for 4 cores or more; Offloads some work onto different threads. usually minor FPS Increase</p>
+</li>
+<li>
+<p><code>-enableHT</code> enables use of logical cores instead of only physical cores. May improve or harm FPS depending of your PC. Try if it works for you. This is overwritten by <code>-cpuCount</code>.</p>
+</li>
+<li>
+<p><code>-hugepages</code> Enable huge page size for memory allocation. Try if it works for you.</p>
+</li>
+<li>
+<p><code>-noLogs</code> Not having to write logs may increase performance, but be sure to disable this if you need to troubleshoot problems.</p>
+</li>
+<li>
+<p><code>-malloc=&lt;string></code> Use a particular Memory Allocator (for advanced users)(More infos <a href=https://community.bistudio.com/wiki/Arma_3:_Custom_Memory_Allocator>here</a>).</p>
+</li>
+<li>
+<p><code>-cpuCount=1</code> Reportedly solves some issure for some people but might decrease performance by a noticable amount. NOTE: This is fixed on the arma perf brance and will find its way into the release branch of Arma soon.</p>
+</li>
+</ul>
 <h3 id=epilogue>Epilogue</h3>
 <p>This Guide was first released in the <a href="https://armaworld.de/forum/thread/4992-ger-eng-arma-on-linux-ninelore-s-guide-acre-tfar-working/?postID=39909#post39909">Armaworld Forums</a> by me. If you have Feedback or Questions dont hesitate to open a Issue.</p>
 </article>
