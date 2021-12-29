@@ -108,9 +108,7 @@ Try a combination of the following to see what works for you the best. Set them 
 -  `-noLogs` Not having to write logs may increase performance, but be sure to disable this if you need to troubleshoot problems.
 -  `-malloc=<string>` Use a particular Memory Allocator (for advanced users)(More infos [here](https://community.bistudio.com/wiki/Arma_3:_Custom_Memory_Allocator)).
 
--  `-cpuCount=1` Reportedly solves some issure for some people but might decrease performance by a noticable amount.
-
-#### 6.2 tbd
+-  `-cpuCount=1` Reportedly solves some issure for some people but might decrease performance by a noticable amount. NOTE: This is fixed on the arma perf brance and will find its way into the release branch of Arma soon.
 
 ### Epilogue
 
