@@ -69,7 +69,7 @@ Done!
 
 #### 5.1 I have problems with sound and/or thermal vision  
 Install [protontricks via python pipx](https://github.com/Matoking/protontricks#pipx-recommended) and run the following command:  
-`protontricks 107410 d3dcompiler_43 d3dx10_43 d3dx11_43 mfc140 xact_64`
+`protontricks 107410 d3dcompiler_43 d3dx10_43 d3dx11_43 mfc140 xact_x64`
 
 #### 5.2 I still have problems with sound
 You have 2 options to achieve the same fix.   
