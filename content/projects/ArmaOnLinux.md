@@ -51,31 +51,39 @@ Download: [Arch Linux AUR](https://aur.archlinux.org/packages/arma3-unix-launche
 
 This is everything you need to play Arma 3 on Linux without ACRE2 or TFAR. Congratulations to get this far. ;)
 
-### 4. ACRE2/TFAR
+### 4. The Helper script and ACRE2 / TFAR
 
-Make sure you did the command of Chapter 5.1 and that you are running Proton 6.3 or newer!
+#### 4.1 The Helper script
+The Arma3Helper Script (formerly Arma3TS.sh) is reqired to run ACRE2 or TFAR on Linux. It also provides utility to make some Troubleshooting (see Chapter 5) easier.
 
-Place the `Arma3TS-*.sh` [provided here (click me)](https://github.com/ninelore/armaonlinux) in your home directory.  
-Edit the file and adjust the settings inside the marked area in that file according to the comments.  
-Now download a recent **Windows Installer(!)** of Teamspeak 3.  
+Place the `Arma3Helper.sh` [provided here (click me)](https://github.com/ninelore/armaonlinux) in your home directory for easy access.  
+Edit the file and adjust the settings inside the marked area in that file according to the comments.
+
+#### 4.2 Preperation for ACRE2 / TFAR
+The Arma3Helper script provides a wrapper for winetricks that will set the wineprefix to Arma's compatdata folder after you adjusted the settings inside the script.  
+To install a variety of DLLs/features that are required for ACRE2 / TFAR as well as fix alot of common issues, run the following command.  
+`./Arma3Helper.sh winetricks Arma`
+For transparency: The DLLs/features installed are `d3dcompiler_43`, `d3dx10_43`, `d3dx11_43`, `mfc140` and `xact_x64`.
+
+#### 4.3 ACRE2 / TFAR
+Download a recent **Windows Installer(!)** of Teamspeak 3.  
 Install Teamspeak into the compatdata directory of Arma by running `./Arma3TS-*.sh install path/to/TS3-Installer.exe`.  
 **IMPORTANT: In the Teamspeak Installer, select "Install for all Users" and leave the default path!!!**
 
 After the Insallation you can start TeamSpeak by just running `./Arma3TS-*.sh` **After you have started Arma**.
 
-Done!
-
 ### 5. Troubleshooting
+Note: Some troubleshooting steps require the Arma3Helper script. See Chapter 4.1 for more info. Alternatively you can use [protontricks](https://github.com/Matoking/protontricks).
 
 #### 5.1 I have problems with sound and/or thermal vision  
-Install [protontricks via python pipx](https://github.com/Matoking/protontricks#pipx-recommended) and run the following command:  
-`protontricks 107410 d3dcompiler_43 d3dx10_43 d3dx11_43 mfc140 xact_x64`
+See Chapter 4.2 
+
 
 #### 5.2 I still have problems with sound
 You have 2 options to achieve the same fix.   
-Either you can set the env variable `WINEDLLOVERRIDES="xaudio2_7=n"` in the Steam startup options (or via the Arma 3 Unix Launcher). 
+Either you can set the env variable `WINEDLLOVERRIDES="xaudio2_7=n"` in the Steam startup options (or via the Arma 3 Unix Launcher).  
 {{< image src="/pictures/armalinux/armalaunchoptions-xaudio.png" >}}  
-The other way is to set it via `protontricks 107410 winecfg` and then under "Libraries".  
+The other way is to set it via `./Arma3Helper.sh winecfg` and then under "Libraries".  
 {{< image src="/pictures/armalinux/winecfg-xaudio.png" >}}  
 
 #### 5.3 Arma doesnt open or crashes instantly
@@ -86,6 +94,21 @@ Fedora: `sudo dnf install mesa-vulkan-drivers vulkan-tools`
 
 #### 5.4 Command X returns error Y
 Double check for software and driver updates as well as the spelling of the commands and the settings. If you still got errors continue to Chapter 5.99
+
+#### 5.98 Use the right Linux Distro
+Note: This is only a recommendation. If you want to stick to distro X then feel free to, however keep in mind that you can run into issues which we cannot be easily solve in Chapter 5.99.
+
+What I mean by that is **not** something like "go Arch" or something similar, but to avoid certain kinds of distros that are known to cause problems yb their design.  
+The Distros to avoid are unofficial derivates of Arch Linux, Ubuntu or Debian that are using altered package repositories, as they are known to cause dependency issues (especially if you throw PPA's into the mix) and are generally hard to troubleshoot.  
+Worst offenders in these terms are (absolutely non-exhaustive):
+-  Arch based: Manjaro
+-  Ubuntu based: Pop! OS, elementaryOS
+
+Recommended distros are
+- [Ubuntu](https://ubuntu.com/desktop) or an [official flavour](https://ubuntu.com/download/flavours) (excluding Studio for practical reasons)
+- Arch Linux or one of the following derivates that do not touch package repositories
+  - [EndeavourOS](https://endeavouros.com/)
+  - [Garuda Linux](https://garudalinux.org/)
 
 #### 5.99 I still have a problem
 More help is available on the [ArmaOnUnix Discord](https://discord.gg/p28Ra36)
@@ -104,7 +127,17 @@ Try a combination of the following to see what works for you the best. Set them 
 -  `-noLogs` Not having to write logs may increase performance, but be sure to disable this if you need to troubleshoot problems.
 -  `-malloc=<string>` Use a particular Memory Allocator (for advanced users)(More infos [here](https://community.bistudio.com/wiki/Arma_3:_Custom_Memory_Allocator)).
 
--  `-cpuCount=1` Reportedly solves some issure for some people but might decrease performance by a noticable amount. NOTE: This is fixed on the arma perf brance and will find its way into the release branch of Arma soon.
+-  `-cpuCount=1` Reportedly solves some issure for some people but might decrease performance by a noticable amount. NOTE: This is fixed on the arma perf branch and will find its way into the release branch of Arma soon.
+
+#### 6.2 General Linux gaming optimizations
+Note: These Tips aren't exclusive to Arma, but will apply to almost all Linux gaming.
+- Use a non-standard kernel:
+  - Arch Linux oficially supports the `linux-zen` kernel in its repositories
+  - Debian / Ubuntu users can try the [Liquorix](https://liquorix.net/) or [XanMod](https://xanmod.org/) kernels
+  - Advanced users can build a customized kernel for their system with the help of [linux-tkg](https://github.com/Frogging-Family/linux-tkg)
+- Use different desktop enviroment or optimize a slow one:
+  - KDE Plasma users can replace `kwin` with `kwin-lowlatency`
+  - You might want to switch to a slimmer desktop enviroment like XFCE, LXQt or a bare window manager setup (advanced users)
 
 ### Epilogue
 
