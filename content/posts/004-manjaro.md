@@ -16,5 +16,8 @@ draft: false
 
 #### Average Manjaro Lines of code
 
-[source](https://gitlab.manjaro.org/packages/core/manjaro-system/blob/master/manjaro-update-system.sh#L302)  
+[Oh God (source link)](https://gitlab.manjaro.org/packages/core/manjaro-system/blob/master/manjaro-update-system.sh#L302)  
 {{< image src="/pictures/manjarocode.png" >}}  
+
+[Please Stop (source link)](https://gitlab.manjaro.org/packages/core/manjaro-system/blob/master/manjaro-update-system.sh#L464)
+{{< image src="/pictures/manjarocode2.png" >}}  
