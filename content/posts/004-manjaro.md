@@ -4,7 +4,7 @@ date: 2022-01-13T17:16:56+01:00
 draft: false
 ---
 
-# Here's a quick list of Websites that list the problems of Manjaro Linux
+### Here's a quick list of Websites that list the problems of Manjaro Linux
 
 [https://manjarno.snorlax.sh/](https://manjarno.snorlax.sh/)
 
