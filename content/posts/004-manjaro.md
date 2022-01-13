@@ -13,3 +13,8 @@ draft: false
 [https://www.hadet.dev/Manjaro-Bad/](https://www.hadet.dev/Manjaro-Bad/)
 
 [https://averagelinuxuser.com/manjaro-review/](https://averagelinuxuser.com/manjaro-review/)
+
+#### Average Manjaro Lines of code
+
+[source](https://gitlab.manjaro.org/packages/core/manjaro-system/blob/master/manjaro-update-system.sh#L302)  
+{{< image src="/pictures/manjarocode.png" >}}  
