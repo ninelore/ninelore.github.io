@@ -1,7 +1,7 @@
 ---
 title: "004 Manjaro"
 date: 2022-01-13T17:16:56+01:00
-draft: true
+draft: false
 ---
 
 # Here's a quick list of Websites that list the problems of Manjaro Linux
