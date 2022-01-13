@@ -16,6 +16,8 @@ draft: false
 
 #### Average Manjaro Lines of code
 
+For context: Manjaro script do all kinds of things that are highly advised against by the Arch Linux devs [1](https://wiki.archlinux.org/title/System_maintenance#Avoid_certain_pacman_commands) [2](https://wiki.archlinux.org/title/System_maintenance#Be_careful_with_unofficial_packages)
+
 [Oh God (source link)](https://gitlab.manjaro.org/packages/core/manjaro-system/blob/master/manjaro-update-system.sh#L302)  
 {{< image src="/pictures/manjarocode.png" >}}  
 
