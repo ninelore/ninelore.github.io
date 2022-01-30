@@ -67,10 +67,10 @@ For transparency: The DLLs/features installed are `d3dcompiler_43`, `d3dx10_43`,
 
 #### 4.3 ACRE2 / TFAR
 Download a recent **Windows Installer(!)** of Teamspeak 3.  
-Install Teamspeak into the compatdata directory of Arma by running `./Arma3TS-*.sh install path/to/TS3-Installer.exe`.  
+Install Teamspeak into the compatdata directory of Arma by running `./Arma3Helper.sh install path/to/TS3-Installer.exe`.  
 **IMPORTANT: In the Teamspeak Installer, select "Install for all Users" and leave the default path!!!**
 
-After the Insallation you can start TeamSpeak by just running `./Arma3TS-*.sh` **After you have started Arma**.
+After the Insallation you can start TeamSpeak by just running `./Arma3Helper.sh` **After you have started Arma**.
 
 ### 5. Troubleshooting
 Note: Some troubleshooting steps require the Arma3Helper script. See Chapter 4.1 for more info. Alternatively you can use [protontricks](https://github.com/Matoking/protontricks).
