@@ -15,6 +15,8 @@ The only flaw is the non-working original Launcher, which is no problem due to t
 
 This new Guide is based on all the knowledge that got collected up until now. This Guide will get continuous Updates
 
+Last guide update: 2022-02-16 - Proton 7.0 fixes xaudio + misc. typos
+
 ### 0. Disclaimer
 
 **I don't take any responsibility if any (im)possible damage occurs on your hardware, software or your health, if you lose your job because you were late because your alarm clock didn't ring or if a thermonuclear war breaks out. You are responsible for all changes you are making! Please read everything carefully and if needed twice to prevent misunderstandings. You can contact me via the information provided on my [website](https://ninelore.github.io)**
@@ -80,7 +82,8 @@ See Chapter 4.2
 
 
 #### 5.2 I still have problems with sound
-You have 2 options to achieve the same fix.   
+**IMPORTANT NOTE: This step is obsolete with Proton 7.0**  
+You have 2 options to achieve the same fix.  
 Either you can set the env variable `WINEDLLOVERRIDES="xaudio2_7=n"` in the Steam startup options (or via the Arma 3 Unix Launcher).  
 {{< image src="/pictures/armalinux/armalaunchoptions-xaudio.png" >}}  
 The other way is to set it via `./Arma3Helper.sh winecfg` and then under "Libraries".  
@@ -98,10 +101,10 @@ Double check for software and driver updates as well as the spelling of the comm
 #### 5.98 Use the right Linux Distro
 Note: This is only a recommendation. If you want to stick to distro X then feel free to, however keep in mind that you can run into issues which we cannot be easily solve in Chapter 5.99.
 
-What I mean by that is **not** something like "go Arch" or something similar, but to avoid certain kinds of distros that are known to cause problems yb their design.  
+What I mean by that is **not** something like "go Arch" or something similar, but to avoid certain kinds of distros that are known to cause problems by their design.  
 The Distros to avoid are unofficial derivates of Arch Linux, Ubuntu or Debian that are using altered package repositories, as they are known to cause dependency issues (especially if you throw PPA's into the mix) and are generally hard to troubleshoot.  
 Worst offenders in these terms are (absolutely non-exhaustive):
--  Arch based: Manjaro
+-  Arch based: [Manjaro](https://ninelore.github.io/posts/#manjaro-linux-problems)
 -  Ubuntu based: Pop! OS, elementaryOS
 
 Recommended distros are
