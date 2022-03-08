@@ -6,7 +6,7 @@ draft: false
 
 
 ## Current
-- ### [Play Arma on Linux](http://localhost:1313/project/armaonlinux/)
-- ### [Build AndroidAPS in a terminal without Android Studio](http://localhost:1313/project/aaps-term-build/)
+- ### [Play Arma on Linux](http://ninelore.github.io/project/armaonlinux/)
+- ### [Build AndroidAPS in a terminal without Android Studio](http://ninelore.github.io/project/aaps-term-build/)
 
 ## Archived
