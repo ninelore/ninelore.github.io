@@ -7,7 +7,7 @@
 <meta name=description content="This is a guide on how to build a signed AndroidAPS APK from a terminal (headless) without Android Studio.
 A example use case for this would be building AAPS via SSH from your phone if you need a new apk for whatever reason while you have no physical access to your PC.
 Note: This Guide is a draft that aims to be integrated into the AAPS Wiki once finished!
-Ubuntu Setup apt Deps: Get these packages from your package manager sudo apt install wget git openjdk-8-jre-headless openjdk-11-jre-headless zip unzip zipalign gradle">
+Option 1: Prepare Linux / WSL This will build AndroidAPS with either your Linux system or with the Windows Subsystem for Linux (WSL)">
 <meta name=keywords content="homepage,personal,blog">
 <meta name=robots content="noodp">
 <meta name=theme-color content>
@@ -27,9 +27,9 @@ Build AndroidAPS in a terminal :: Hi, Im ninelore! — Just a human being...
 <meta itemprop=description content="This is a guide on how to build a signed AndroidAPS APK from a terminal (headless) without Android Studio.
 A example use case for this would be building AAPS via SSH from your phone if you need a new apk for whatever reason while you have no physical access to your PC.
 Note: This Guide is a draft that aims to be integrated into the AAPS Wiki once finished!
-Ubuntu Setup apt Deps: Get these packages from your package manager sudo apt install wget git openjdk-8-jre-headless openjdk-11-jre-headless zip unzip zipalign gradle"><meta itemprop=datePublished content="2022-03-08T16:36:38+01:00">
+Option 1: Prepare Linux / WSL This will build AndroidAPS with either your Linux system or with the Windows Subsystem for Linux (WSL)"><meta itemprop=datePublished content="2022-03-08T16:36:38+01:00">
 <meta itemprop=dateModified content="2022-03-08T16:36:38+01:00">
-<meta itemprop=wordCount content="348"><meta itemprop=image content="https://ninelore.github.io">
+<meta itemprop=wordCount content="535"><meta itemprop=image content="https://ninelore.github.io">
 <meta itemprop=keywords content>
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://ninelore.github.io">
@@ -37,12 +37,12 @@ Ubuntu Setup apt Deps: Get these packages from your package manager sudo apt ins
 <meta name=twitter:description content="This is a guide on how to build a signed AndroidAPS APK from a terminal (headless) without Android Studio.
 A example use case for this would be building AAPS via SSH from your phone if you need a new apk for whatever reason while you have no physical access to your PC.
 Note: This Guide is a draft that aims to be integrated into the AAPS Wiki once finished!
-Ubuntu Setup apt Deps: Get these packages from your package manager sudo apt install wget git openjdk-8-jre-headless openjdk-11-jre-headless zip unzip zipalign gradle">
+Option 1: Prepare Linux / WSL This will build AndroidAPS with either your Linux system or with the Windows Subsystem for Linux (WSL)">
 <meta property="og:title" content="Build AndroidAPS in a terminal">
 <meta property="og:description" content="This is a guide on how to build a signed AndroidAPS APK from a terminal (headless) without Android Studio.
 A example use case for this would be building AAPS via SSH from your phone if you need a new apk for whatever reason while you have no physical access to your PC.
 Note: This Guide is a draft that aims to be integrated into the AAPS Wiki once finished!
-Ubuntu Setup apt Deps: Get these packages from your package manager sudo apt install wget git openjdk-8-jre-headless openjdk-11-jre-headless zip unzip zipalign gradle">
+Option 1: Prepare Linux / WSL This will build AndroidAPS with either your Linux system or with the Windows Subsystem for Linux (WSL)">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://ninelore.github.io/project/aaps-term-build/"><meta property="og:image" content="https://ninelore.github.io"><meta property="article:section" content="project">
 <meta property="article:published_time" content="2022-03-08T16:36:38+01:00">
@@ -71,24 +71,27 @@ Ubuntu Setup apt Deps: Get these packages from your package manager sudo apt ins
 </p></div><article>
 <h2 class=post-title><a href=https://ninelore.github.io/project/aaps-term-build/>Build AndroidAPS in a terminal</a></h2><div class=post-content>
 <p>This is a guide on how to build a signed <a href=https://androidaps.readthedocs.io>AndroidAPS</a> APK from a terminal (headless) without Android Studio.<br>
-A example use case for this would be building AAPS via SSH from your phone if you need a new apk for whatever reason while you have no physical access to your PC.</p><p>Note: This Guide is a draft that aims to be integrated into the AAPS Wiki once finished!</p><h2 id=ubuntu-setup>Ubuntu Setup</h2><h3 id=apt-deps>apt Deps:</h3><p>Get these packages from your package manager
-<code>sudo apt install wget git openjdk-8-jre-headless openjdk-11-jre-headless zip unzip zipalign gradle</code></p><h3 id=non-pkg-deps>non-pkg Deps:</h3><p>Run these commands to get the Android command line tools</p><pre tabindex=0><code>wget https://dl.google.com/android/repository/commandlinetools-linux-6200805_latest.zip
+A example use case for this would be building AAPS via SSH from your phone if you need a new apk for whatever reason while you have no physical access to your PC.</p><p>Note: This Guide is a draft that aims to be integrated into the AAPS Wiki once finished!</p><h2 id=option-1-prepare-linux--wsl>Option 1: Prepare Linux / WSL</h2><p>This will build AndroidAPS with either your Linux system or with the Windows Subsystem for Linux (WSL)</p><p>Notes:</p><ul>
+<li>Installing WSL via this command requires Windows 10 version 2004 (build 19041) or higher or Windows 11.</li><li>If your PC is already running Linux you can skip installing WSL.</li><li>The Guide assumes you are using the latest Ubuntu LTS. Some commands may be different if you are using a different distribution.</li></ul><h3 id=install-wsl-if-not-already-installed>Install WSL (if not already installed)</h3><p>Run the following command in PowerShell to install WSL:</p><pre tabindex=0><code>wsl --install
+</code></pre><p>Once it is installed it will ask you to type in a username and password. After that it will load directly into the WSL shell.</p><p>If you see a help text after typing that command, you need to install a linux distribution for WSL. For that run:</p><pre tabindex=0><code>wsl --install -d Ubuntu
+</code></pre><p>If you see a PowerShell prompt again after the installation, you can start WSL by running:</p><pre tabindex=0><code>ubuntu
+</code></pre><h3 id=install-package-manager-dependecies>Install package manager dependecies:</h3><p>Install these packages from your package manager</p><pre tabindex=0><code>sudo apt install wget git openjdk-8-jre-headless openjdk-11-jre-headless zip unzip zipalign gradle
+</code></pre><h3 id=get-other-dependecies>Get other dependecies:</h3><p>Run these commands to get the Android command line tools</p><pre tabindex=0><code>wget https://dl.google.com/android/repository/commandlinetools-linux-6200805_latest.zip
 mkdir android-sdk
 unzip commandlinetools-linux-6200805_latest.zip -d $HOME/android-sdk
-</code></pre><h3 id=setup-enviromental-variables>Setup Enviromental Variables</h3><p>Add this to your <code>.bashrc</code> if using bash or to the rc file of your shell.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>export ANDROID_HOME<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span>$HOME<span style=color:#e6db74>/android-sdk&#34;</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> <span style=color:#f92672>[</span> -n <span style=color:#e6db74>&#34;</span>$ANDROID_HOME<span style=color:#e6db74>&#34;</span> <span style=color:#f92672>]</span> ; <span style=color:#66d9ef>then</span>
-</span></span><span style=display:flex><span>	PATH<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span>$ANDROID_HOME<span style=color:#e6db74>/emulator:</span>$ANDROID_HOME<span style=color:#e6db74>/tools:</span>$ANDROID_HOME<span style=color:#e6db74>/tools/bin:</span>$ANDROID_HOME<span style=color:#e6db74>/platform-tools:</span>$PATH<span style=color:#e6db74>&#34;</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>fi</span>
-</span></span></code></pre></div><p>Restart your Terminal/Shell</p><h3 id=setup-sdk>Setup SDK</h3><p>Run these commands to install the SDK and build tools</p><pre tabindex=0><code>sdkmanager --sdk_root=${ANDROID_HOME} &#34;tools&#34;
+</code></pre><h3 id=setup-enviromental-variables>Setup Enviromental Variables</h3><p>Add this to your <code>.bashrc</code> or to the equivalent file for your shell.</p><pre tabindex=0><code>export ANDROID_HOME=&#34;$HOME/android-sdk&#34;
+if [ -n &#34;$ANDROID_HOME&#34; ] ; then
+	PATH=&#34;$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH&#34;
+fi
+</code></pre><p>Restart your Terminal/Shell</p><h3 id=setup-sdk>Setup SDK</h3><p>Run these commands to install the SDK and build tools</p><pre tabindex=0><code>sdkmanager --sdk_root=${ANDROID_HOME} &#34;tools&#34;
 sdkmanager --update
 sdkmanager &#34;build-tools;28.0.3&#34; &#34;platform-tools&#34; &#34;platforms;android-28&#34; &#34;tools&#34;
 sdkmanager --licenses
-</code></pre><h2 id=windows-setup>Windows Setup</h2><h3 id=wip>WIP</h3><ul>
-<li>install git</li><li>install android sdk tools and stuff</li><li>add both of above to PATH</li></ul><h2 id=build>Build</h2><h3 id=clone-aaps-git>Clone AAPS git</h3><pre tabindex=0><code>git clone https://github.com/nightscout/androidaps.git
-cd AndroidAPS
-</code></pre><h3 id=build-1>Build</h3><p>Note: Unlike in Android Studio, this will always build both the main apk and the wear apk.</p><pre tabindex=0><code>./gradlew :app:assembleFullRelease
+</code></pre><h2 id=option-2-prepare-windows-powershell>Option 2: Prepare (Windows) PowerShell</h2><p>tbd</p><h2 id=build-and-sign>Build and sign</h2><h3 id=clone-aaps-git>Clone AAPS git</h3><pre tabindex=0><code>git clone https://github.com/nightscout/androidaps.git
+cd androidaps
+</code></pre><h3 id=build>Build</h3><p>Note: Unlike in Android Studio, this will always build both the main apk and the wear apk.</p><pre tabindex=0><code>./gradlew :app:assembleFullRelease
 </code></pre><p>The <code>.apk</code>&rsquo;s can be found in:</p><ul>
-<li>Main app: <code>app/build/outputs/apk/full/release/app-full-release-unsigned.apk</code></li><li>Wear app: <code>wear/build/outputs/apk/full/release/wear-full-release-unsigned.apk</code></li></ul><h3 id=sign>Sign</h3><h4 id=create-a-single-keystore-file-if-not-done-already>Create a single keystore file if not done already</h4><p>Give it a password, your Name and leave everything else empty. Confirm by typing &ldquo;yes&rdquo;.</p><pre tabindex=0><code>keytool -genkey -v -keystore ~/my-aaps-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias aaps1
+<li>Main app: <code>androidaps/app/build/outputs/apk/full/release/app-full-release-unsigned.apk</code></li><li>Wear app: <code>androidaps/wear/build/outputs/apk/full/release/wear-full-release-unsigned.apk</code></li></ul><h3 id=sign>Sign</h3><h4 id=create-a-single-keystore-file-if-not-done-already>Create a single keystore file if not done already</h4><p>Give it a password, your Name and leave everything else empty. Confirm by typing &ldquo;yes&rdquo;.</p><pre tabindex=0><code>keytool -genkey -v -keystore ~/my-aaps-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias aaps1
 </code></pre><h4 id=align-the-apks-and-sign-them>Align the apk&rsquo;s and sign them</h4><pre tabindex=0><code>cd app/build/outputs/apk/full/release/
 # align
 zipalign -v -p 4 app-full-release-unsigned.apk app-full-release-unsigned-aligned.apk
@@ -103,7 +106,8 @@ zipalign -v -p 4 wear-full-release-unsigned.apk wear-full-release-unsigned-align
 apksigner sign --ks ~/my-aaps-key.jks --out wear-full-release-signed.apk wear-full-release-unsigned-aligned.apk
 # (optional) verify successful signing
 apksigner verify --verbose wear-full-release-signed.apk
-</code></pre><h2 id=install-app>Install app</h2><p>Copy the apk to your phone via your preferred way and install it.</p></div></article><hr>
+</code></pre><h2 id=install-app>Install app</h2><p>Copy the apk to your phone via your preferred way and install it.</p><p>Tips for WSL:</p><ul>
+<li>run <code>explorer.exe .</code> to open the Windows Explorer in the current directory</li><li>run <code>code &lt;file></code> to open a file in Visual Studio Code</li><li>run <code>code .</code> to open the current directory in Visual Studio Code</li></ul></div></article><hr>
 <div class=post-info>
 </div></main></div><footer class=footer>
 <div class=footer__inner>
