@@ -1,11 +1,11 @@
 ---
-title: "AAPS terminal build"
+title: "Build AndroidAPS in a terminal"
 date: 2022-03-08T16:36:38+01:00
 draft: false
 ---
 
 This is a guide on how to build a signed [AndroidAPS](https://androidaps.readthedocs.io) APK from a terminal (headless) without Android Studio.  
-A example usecase for this would be building AAPS via SSH from your phone if you need a new apk for whatever reason while you have no physical access to your PC.
+A example use case for this would be building AAPS via SSH from your phone if you need a new apk for whatever reason while you have no physical access to your PC.
 
 Note: This Guide is a draft that aims to be integrated into the AAPS Wiki once finished!
 

@@ -1,17 +1,12 @@
----
-title: "About me"
-date: 2021-03-20
-draft: false
----
++++
+title = "About me"
+date = 2021-03-20
+draft = false
++++
 
 Many know me as ninelore, but my real name is Ingo.
 This is my personal Blog, and you should treat everything that you read in my blog posts as opinions if not stated otherwise. 
 
-#### Contact
-- [Email](mailto:ninelore@protonmail.com)
-- [Github](https://github.com/ninelore)
-- [Twitter](https://twitter.com/neinlore)
-- Discord: ninelore#9823
 
 ### Childhood
 Born in the German State of Hesse, I got my first PC at the age of five, and my first contact with Linux with seven years.  
@@ -22,20 +17,24 @@ I believe these expeiences made me very wise, astute and perfectionist. I have a
 
 ### My Interests
 - Global Politics and Society: 
+  - freedom
   - privacy
-  - free speech
+  - free speech & press
   - climate change
   - democracy and the restriction of lobbying
+- Tech
+  - Linux
+  - Coding
+  - Server
+  - IoT
 - Gaming
-  - Final Fantasy XIV
-  - World of Warcraft
+  - Final Fantasy XIV, World of Warcraft, Lost Ark
+  - Digital Combat Simulator
   - Arma 3
   - Warframe
-  - Digital Combat Simulator
-- FOSS movement
-  - Linux
+- Diabetes Technology
 - Metal music
 - Photography
 
 
-I maybe already have or will in the future post(ed) a blogpost with details about any topic mentioned here. Be sure to check them out ;)
+I may have or will in the future post(ed) blogposts about any topic mentioned here. Be sure to check them out ;)
