@@ -5,9 +5,9 @@ draft: false
 ---
 
 ## Current
-- ### [Play Arma on Linux](http://ninelore.github.io/project/armaonlinux/)
-- ### [Build AndroidAPS in a terminal without Android Studio](http://ninelore.github.io/project/aaps-term-build/)
+- ### [Play Arma on Linux](/project/armaonlinux/)
+- ### [Build AndroidAPS in a terminal without Android Studio](/project/aaps-term-build/)
 
 ## Archived
 
-[Broken links?](https://ninelore.github.io/project)
+[Broken links?](/project)
