@@ -60,7 +60,7 @@ paginate     = 10
 
 [[params.social]]
     name = "twitter"
-    url  = "/twitter"
+    url  = "https://twitter.com/neinlore"
 
 
 [languages]
