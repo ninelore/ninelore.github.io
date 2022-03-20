@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO Liste</title>
+    </head>
+
+    <body>
+        <h1>ToDo Liste</h1>
+        <div id="container"></div>
+        <form onsubmit="return false">
+            Neu: <input type="text" id="todoText" onkeypress="clickPress(event)"> 
+            <input type="button" onclick="newTodo(document.getElementById('todoText').value);" value="Hinzufügen">
+        </form>
+    </body>
+
+    <script type = "text/JavaScript">
+        function clickPress(event) {
+            if (event.keyCode == 13) {
+                newTodo(document.getElementById('todoText').value);
+            }
+        }
+        var todos = new Array();
+        function newTodo(v) {
+            todos.push(v);
+            makeList();
+        }
+        function delTodo(i) {
+            todos.splice(i,1)
+            makeList();
+        }
+        function makeList() {
+            var cont = document.getElementById('container');
+            cont.innerHTML = "";
+            var ul = document.createElement('ul');
+            for (i = 0; i <= todos.length - 1; i++) {
+               var li = document.createElement('li');
+               li.innerHTML = todos[i] + "  " + "<input type='button' onclick='delTodo(" + i + ");' value='Löschen'>";
+               ul.appendChild(li);
+            }
+            cont.appendChild(ul);
+        }
+    </script>
+</html>
