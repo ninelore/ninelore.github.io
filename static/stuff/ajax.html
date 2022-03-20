@@ -10,6 +10,16 @@
     </body>
     <script type = "text/JavaScript">
         function loadAjax() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("ajax").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "https://ninelore.github.io/stuff/ajax.html", true);
+            xhttp.send();
+        }
+        function loadAjaxA() {
             document.getElementById("ajax").innerHTML='<object type="text/html" data="https://ninelore.github.io/stuff/ajax.html" ></object>';
         }
     </script>
