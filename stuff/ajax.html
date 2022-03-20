@@ -5,15 +5,15 @@
     </head>
     <body>
         <h1>JS-Ajax: Ajax</h1>
-        <input type="button" onclick="loadAjax()" value="Lade Ajax">
-        <div id="ajax"></div>
+        <input type="button" onclick="loadAjax2()" value="Lade Ajax">
+        <div id="ajax2"></div>
     </body>
     <script type = "text/JavaScript">
-        function loadAjax() {
+        function loadAjax2() {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                    setInnerHtml(document.getElementById("ajax"), this.responseText);
+                    setInnerHtml(document.getElementById("ajax2"), this.responseText);
                 }
             };
             xhttp.open("GET", "https://ninelore.github.io/stuff/ajax.html", true);
