@@ -1,78 +1,17 @@
-<!doctype html><html lang=en>
-<head>
-<meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="ie=edge">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name=author content="ninelore ">
-<meta name=description content="This is a guide on how to build a signed AndroidAPS APK from a terminal (headless) without Android Studio.
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=author content="ninelore "><meta name=description content="This is a guide on how to build a signed AndroidAPS APK from a terminal (headless) without Android Studio.
 A example use case for this would be building AAPS via SSH from your phone if you need a new apk for whatever reason while you have no physical access to your PC.
 Note: This Guide is a draft that aims to be integrated into the AAPS Wiki once finished!
-Option 1: Prepare Linux / WSL This will build AndroidAPS with either your Linux system or with the Windows Subsystem for Linux (WSL)">
-<meta name=keywords content="homepage,personal,blog">
-<meta name=robots content="noodp">
-<meta name=theme-color content>
-<link rel=canonical href=https://ninelore.github.io/project/aaps-term-build/>
-<title>
-Build AndroidAPS in a terminal :: Hi, Im ninelore! — Just a human being...
-</title><link href=https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css rel=stylesheet type=text/css>
-<link rel=stylesheet href=/main.4e5c639214707eff609bb55fe49e183dee42258a73bc90e4cc7b0a84f900798a.css>
-<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
-<link rel=manifest href=/site.webmanifest>
-<link rel=mask-icon href=/safari-pinned-tab.svg color>
-<link rel="shortcut icon" href=/favicon.ico>
-<meta name=msapplication-TileColor content>
-<meta itemprop=name content="Build AndroidAPS in a terminal">
-<meta itemprop=description content="This is a guide on how to build a signed AndroidAPS APK from a terminal (headless) without Android Studio.
+Option 1: Prepare Linux / WSL This will build AndroidAPS with either your Linux system or with the Windows Subsystem for Linux (WSL)"><meta name=keywords content="homepage,personal,blog"><meta name=robots content="noodp"><meta name=theme-color content><link rel=canonical href=https://ninelore.github.io/project/aaps-term-build/><title>Build AndroidAPS in a terminal :: Hi, Im ninelore! — Just a human being...</title><link href=https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css rel=stylesheet type=text/css><link rel=stylesheet href=/main.4e5c639214707eff609bb55fe49e183dee42258a73bc90e4cc7b0a84f900798a.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color><link rel="shortcut icon" href=/favicon.ico><meta name=msapplication-TileColor content><meta itemprop=name content="Build AndroidAPS in a terminal"><meta itemprop=description content="This is a guide on how to build a signed AndroidAPS APK from a terminal (headless) without Android Studio.
 A example use case for this would be building AAPS via SSH from your phone if you need a new apk for whatever reason while you have no physical access to your PC.
 Note: This Guide is a draft that aims to be integrated into the AAPS Wiki once finished!
-Option 1: Prepare Linux / WSL This will build AndroidAPS with either your Linux system or with the Windows Subsystem for Linux (WSL)"><meta itemprop=datePublished content="2022-03-08T16:36:38+01:00">
-<meta itemprop=dateModified content="2022-03-08T16:36:38+01:00">
-<meta itemprop=wordCount content="535"><meta itemprop=image content="https://ninelore.github.io">
-<meta itemprop=keywords content>
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://ninelore.github.io">
-<meta name=twitter:title content="Build AndroidAPS in a terminal">
-<meta name=twitter:description content="This is a guide on how to build a signed AndroidAPS APK from a terminal (headless) without Android Studio.
+Option 1: Prepare Linux / WSL This will build AndroidAPS with either your Linux system or with the Windows Subsystem for Linux (WSL)"><meta itemprop=datePublished content="2022-03-08T16:36:38+01:00"><meta itemprop=dateModified content="2022-03-08T16:36:38+01:00"><meta itemprop=wordCount content="535"><meta itemprop=image content="https://ninelore.github.io"><meta itemprop=keywords content><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://ninelore.github.io"><meta name=twitter:title content="Build AndroidAPS in a terminal"><meta name=twitter:description content="This is a guide on how to build a signed AndroidAPS APK from a terminal (headless) without Android Studio.
 A example use case for this would be building AAPS via SSH from your phone if you need a new apk for whatever reason while you have no physical access to your PC.
 Note: This Guide is a draft that aims to be integrated into the AAPS Wiki once finished!
-Option 1: Prepare Linux / WSL This will build AndroidAPS with either your Linux system or with the Windows Subsystem for Linux (WSL)">
-<meta property="og:title" content="Build AndroidAPS in a terminal">
-<meta property="og:description" content="This is a guide on how to build a signed AndroidAPS APK from a terminal (headless) without Android Studio.
+Option 1: Prepare Linux / WSL This will build AndroidAPS with either your Linux system or with the Windows Subsystem for Linux (WSL)"><meta property="og:title" content="Build AndroidAPS in a terminal"><meta property="og:description" content="This is a guide on how to build a signed AndroidAPS APK from a terminal (headless) without Android Studio.
 A example use case for this would be building AAPS via SSH from your phone if you need a new apk for whatever reason while you have no physical access to your PC.
 Note: This Guide is a draft that aims to be integrated into the AAPS Wiki once finished!
-Option 1: Prepare Linux / WSL This will build AndroidAPS with either your Linux system or with the Windows Subsystem for Linux (WSL)">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://ninelore.github.io/project/aaps-term-build/"><meta property="og:image" content="https://ninelore.github.io"><meta property="article:section" content="project">
-<meta property="article:published_time" content="2022-03-08T16:36:38+01:00">
-<meta property="article:modified_time" content="2022-03-08T16:36:38+01:00">
-<meta property="article:published_time" content="2022-03-08 16:36:38 +0100 +0100">
-</head><body>
-<div class=container>
-<header class=header>
-<span class=header__inner>
-<a href=/ style=text-decoration:none>
-<div class=logo>
-<span class=logo__mark>></span>
-<span class=logo__text> </span>
-<span class=logo__cursor>
-</span>
-</div></a>
-<span class=header__right>
-<nav class=menu>
-<ul class=menu__inner><li><a href=/about>About</a></li><li><a href=/posts>Blog</a></li><li><a href=/projects>Projects</a></li></ul></nav><span class=menu-trigger><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-</span>
-</span>
-</span>
-</header><div class=content>
-<main class=post>
-<div class=post-info>
-</p></div><article>
-<h2 class=post-title><a href=https://ninelore.github.io/project/aaps-term-build/>Build AndroidAPS in a terminal</a></h2><div class=post-content>
-<p>This is a guide on how to build a signed <a href=https://androidaps.readthedocs.io>AndroidAPS</a> APK from a terminal (headless) without Android Studio.<br>
-A example use case for this would be building AAPS via SSH from your phone if you need a new apk for whatever reason while you have no physical access to your PC.</p><p>Note: This Guide is a draft that aims to be integrated into the AAPS Wiki once finished!</p><h2 id=option-1-prepare-linux--wsl>Option 1: Prepare Linux / WSL</h2><p>This will build AndroidAPS with either your Linux system or with the Windows Subsystem for Linux (WSL)</p><p>Notes:</p><ul>
-<li>Installing WSL via this command requires Windows 10 version 2004 (build 19041) or higher or Windows 11.</li><li>If your PC is already running Linux you can skip installing WSL.</li><li>The Guide assumes you are using the latest Ubuntu LTS. Some commands may be different if you are using a different distribution.</li></ul><h3 id=install-wsl-if-not-already-installed>Install WSL (if not already installed)</h3><p>Run the following command in PowerShell to install WSL:</p><pre tabindex=0><code>wsl --install
+Option 1: Prepare Linux / WSL This will build AndroidAPS with either your Linux system or with the Windows Subsystem for Linux (WSL)"><meta property="og:type" content="article"><meta property="og:url" content="https://ninelore.github.io/project/aaps-term-build/"><meta property="og:image" content="https://ninelore.github.io"><meta property="article:section" content="project"><meta property="article:published_time" content="2022-03-08T16:36:38+01:00"><meta property="article:modified_time" content="2022-03-08T16:36:38+01:00"><meta property="article:published_time" content="2022-03-08 16:36:38 +0100 +0100"></head><body><div class=container><header class=header><span class=header__inner><a href=/ style=text-decoration:none><div class=logo><span class=logo__mark>></span>
+<span class=logo__text></span><span class=logo__cursor></span></div></a><span class=header__right><nav class=menu><ul class=menu__inner><li><a href=/about>About</a></li><li><a href=/posts>Blog</a></li><li><a href=/projects>Projects</a></li></ul></nav><span class=menu-trigger><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></span></span></span></header><div class=content><main class=post><div class=post-info></p></div><article><h2 class=post-title><a href=https://ninelore.github.io/project/aaps-term-build/>Build AndroidAPS in a terminal</a></h2><div class=post-content><p>This is a guide on how to build a signed <a href=https://androidaps.readthedocs.io>AndroidAPS</a> APK from a terminal (headless) without Android Studio.<br>A example use case for this would be building AAPS via SSH from your phone if you need a new apk for whatever reason while you have no physical access to your PC.</p><p>Note: This Guide is a draft that aims to be integrated into the AAPS Wiki once finished!</p><h2 id=option-1-prepare-linux--wsl>Option 1: Prepare Linux / WSL</h2><p>This will build AndroidAPS with either your Linux system or with the Windows Subsystem for Linux (WSL)</p><p>Notes:</p><ul><li>Installing WSL via this command requires Windows 10 version 2004 (build 19041) or higher or Windows 11.</li><li>If your PC is already running Linux you can skip installing WSL.</li><li>The Guide assumes you are using the latest Ubuntu LTS. Some commands may be different if you are using a different distribution.</li></ul><h3 id=install-wsl-if-not-already-installed>Install WSL (if not already installed)</h3><p>Run the following command in PowerShell to install WSL:</p><pre tabindex=0><code>wsl --install
 </code></pre><p>Once it is installed it will ask you to type in a username and password. After that it will load directly into the WSL shell.</p><p>If you see a help text after typing that command, you need to install a linux distribution for WSL. For that run:</p><pre tabindex=0><code>wsl --install -d Ubuntu
 </code></pre><p>If you see a PowerShell prompt again after the installation, you can start WSL by running:</p><pre tabindex=0><code>ubuntu
 </code></pre><h3 id=install-package-manager-dependecies>Install package manager dependecies:</h3><p>Install these packages from your package manager</p><pre tabindex=0><code>sudo apt install wget git openjdk-8-jre-headless openjdk-11-jre-headless zip unzip zipalign gradle
@@ -90,8 +29,7 @@ sdkmanager --licenses
 </code></pre><h2 id=option-2-prepare-windows-powershell>Option 2: Prepare (Windows) PowerShell</h2><p>tbd</p><h2 id=build-and-sign>Build and sign</h2><h3 id=clone-aaps-git>Clone AAPS git</h3><pre tabindex=0><code>git clone https://github.com/nightscout/androidaps.git
 cd androidaps
 </code></pre><h3 id=build>Build</h3><p>Note: Unlike in Android Studio, this will always build both the main apk and the wear apk.</p><pre tabindex=0><code>./gradlew :app:assembleFullRelease
-</code></pre><p>The <code>.apk</code>&rsquo;s can be found in:</p><ul>
-<li>Main app: <code>androidaps/app/build/outputs/apk/full/release/app-full-release-unsigned.apk</code></li><li>Wear app: <code>androidaps/wear/build/outputs/apk/full/release/wear-full-release-unsigned.apk</code></li></ul><h3 id=sign>Sign</h3><h4 id=create-a-single-keystore-file-if-not-done-already>Create a single keystore file if not done already</h4><p>Give it a password, your Name and leave everything else empty. Confirm by typing &ldquo;yes&rdquo;.</p><pre tabindex=0><code>keytool -genkey -v -keystore ~/my-aaps-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias aaps1
+</code></pre><p>The <code>.apk</code>&rsquo;s can be found in:</p><ul><li>Main app: <code>androidaps/app/build/outputs/apk/full/release/app-full-release-unsigned.apk</code></li><li>Wear app: <code>androidaps/wear/build/outputs/apk/full/release/wear-full-release-unsigned.apk</code></li></ul><h3 id=sign>Sign</h3><h4 id=create-a-single-keystore-file-if-not-done-already>Create a single keystore file if not done already</h4><p>Give it a password, your Name and leave everything else empty. Confirm by typing &ldquo;yes&rdquo;.</p><pre tabindex=0><code>keytool -genkey -v -keystore ~/my-aaps-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias aaps1
 </code></pre><h4 id=align-the-apks-and-sign-them>Align the apk&rsquo;s and sign them</h4><pre tabindex=0><code>cd app/build/outputs/apk/full/release/
 # align
 zipalign -v -p 4 app-full-release-unsigned.apk app-full-release-unsigned-aligned.apk
@@ -106,14 +44,6 @@ zipalign -v -p 4 wear-full-release-unsigned.apk wear-full-release-unsigned-align
 apksigner sign --ks ~/my-aaps-key.jks --out wear-full-release-signed.apk wear-full-release-unsigned-aligned.apk
 # (optional) verify successful signing
 apksigner verify --verbose wear-full-release-signed.apk
-</code></pre><h2 id=install-app>Install app</h2><p>Copy the apk to your phone via your preferred way and install it.</p><p>Tips for WSL:</p><ul>
-<li>run <code>explorer.exe .</code> to open the Windows Explorer in the current directory</li><li>run <code>code &lt;file></code> to open a file in Visual Studio Code</li><li>run <code>code .</code> to open the current directory in Visual Studio Code</li></ul></div></article><hr>
-<div class=post-info>
-</div></main></div><footer class=footer>
-<div class=footer__inner>
-<div class=footer__content>
-<span>&copy; 2022</span>
+</code></pre><h2 id=install-app>Install app</h2><p>Copy the apk to your phone via your preferred way and install it.</p><p>Tips for WSL:</p><ul><li>run <code>explorer.exe .</code> to open the Windows Explorer in the current directory</li><li>run <code>code &lt;file></code> to open a file in Visual Studio Code</li><li>run <code>code .</code> to open the current directory in Visual Studio Code</li></ul></div></article><hr><div class=post-info></div></main></div><footer class=footer><div class=footer__inner><div class=footer__content><span>&copy; 2022</span>
 <span><a href=https://ninelore.github.io>ninelore</a></span>
-<span><a href=https://creativecommons.org/licenses/by-nc-sa/4.0/ target=_blank rel=noopener>CC BY-NC-SA 4.0</a></span>
-</div></div></footer></div><script type=text/javascript src=/bundle.min.2d3d449fc0ff117f00ac91342a8f76cd5b710411d7a0254dbe75da3234d2f685d6a0c44cff60c414e90b6a149da8e4032c713c25e4e6838e2e3918dc0ad2e81c.js integrity="sha512-LT1En8D/EX8ArJE0Ko92zVtxBBHXoCVNvnXaMjTS9oXWoMRM/2DEFOkLahSdqOQDLHE8JeTmg44uORjcCtLoHA=="></script>
-</body></html>
+<span><a href=https://creativecommons.org/licenses/by-nc-sa/4.0/ target=_blank rel=noopener>CC BY-NC-SA 4.0</a></span></div></div></footer></div><script type=text/javascript src=/bundle.min.2d3d449fc0ff117f00ac91342a8f76cd5b710411d7a0254dbe75da3234d2f685d6a0c44cff60c414e90b6a149da8e4032c713c25e4e6838e2e3918dc0ad2e81c.js integrity="sha512-LT1En8D/EX8ArJE0Ko92zVtxBBHXoCVNvnXaMjTS9oXWoMRM/2DEFOkLahSdqOQDLHE8JeTmg44uORjcCtLoHA=="></script></body></html>
