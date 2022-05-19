@@ -4,7 +4,7 @@ date: 2021-03-22T21:39:17+01:00
 draft: false
 ---
 
-### Preamble:
+# Preamble:
 
 A few months and improvements to Proton after its first release, i had the first known, good working Arma installation on Linux.
 
@@ -15,7 +15,24 @@ The only flaw is the non-working original launcher, which is no problem due both
 
 This new guide is based on all the knowledge that got collected up until now. This guide will get continuous Updates
 
-Last guide update: 2022-03-09 - Link fixes after new website theme and various typos / format fixes
+Last guide update: 2022-05-19 - Arma Reforger
+
+# Arma Reforger
+
+### 1. Prepare
+
+If you haven't done so yet, activate Steam Play for all Games in the global Steam settings. Refer to the "Prepare" Chapter of the Arma 3 Section on how to do so.
+
+To play Arma Reforger on Linux, you'll just have to set your launch options to the following. (Refer to the Arma 3 Section again on how to do so.)
+```
+echo "%command%" | sed 's/ArmaReforger_BE.exe/ArmaReforgerSteam.exe/' | sh
+```
+
+Thats it, it should be playable now, assuming you have downloaded it. 
+
+Credits for this go to HER0#0927 on Discord.
+
+# Arma 3
 
 ### 0. Disclaimer
 
