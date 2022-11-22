@@ -72,6 +72,8 @@ This is everything you need to play Arma 3 on Linux without ACRE2 or TFAR. Congr
 
 ### 4. The Helper script and ACRE2 / TFAR
 
+**Important: Make sure to start Arma at least once into the main menu before moving on!**
+
 #### 4.1 The Helper script
 The Arma3Helper Script (formerly Arma3TS.sh) is reqired to run ACRE2 or TFAR on Linux. It also provides utility to make some troubleshooting (see Chapter 5) easier.
 
@@ -80,7 +82,7 @@ Edit the file and adjust the settings inside the marked area in that file accord
 
 #### 4.2 Preperation for ACRE2 / TFAR
 The Arma3Helper script provides a wrapper for winetricks that will set the wineprefix to Arma's compatdata folder after you adjusted the settings inside the script.  
-To install a variety of DLLs/features that are required for ACRE2 / TFAR as well as fix alot of common issues, run the following command.   
+To install a variety of DLLs/features that are required for ACRE2 / TFAR as well as fix alot of common issues, run the following command.  
 `./Arma3Helper.sh winetricks Arma`  
 For transparency: The DLLs/features installed are `d3dcompiler_43`, `d3dx10_43`, `d3dx11_43`, `mfc140` and `xact_x64`.
 
@@ -92,12 +94,13 @@ Install Teamspeak into the compatdata directory of Arma by running
 
 After the insallation you can start TeamSpeak by just running `./Arma3Helper.sh` **After you have started Arma**.
 
+For TFAR you need to manually copy the plugin dll's folders into your Teamspeak path (`c/Program Files/TeamSpeak 3 Client/plugins/`). Note that a `.ts3plugin` file is nothing but a ZIP with a different extension. Just unzip it with the tool of your choice.
+
 ### 5. Troubleshooting
 Note: Some troubleshooting steps require the Arma3Helper script. See Chapter 4.1 for more info. Alternatively you can use [protontricks](https://github.com/Matoking/protontricks).
 
 #### 5.1 I have problems with sound and/or thermal vision  
-See Chapter 4.2 
-
+See Chapter 4.2  
 
 #### 5.2 I still have problems with sound (**only for Proton 6.3 and older!**)
 You have 2 options to achieve the same fix.  
@@ -115,23 +118,9 @@ Fedora: `sudo dnf install mesa-vulkan-drivers vulkan-tools`
 #### 5.4 Command X returns error Y
 Double check for software and driver updates as well as the spelling of the commands and the settings. If you still got errors continue to Chapter 5.99
 
-#### 5.98 Use the right Linux Distro
-Note: This is only a recommendation. If you want to stick to distro X then feel free to, however keep in mind that you can run into issues which we cannot be easily solve in Chapter 5.99.
-
-What I mean by that is **not** something like "go Arch" or something similar, but to avoid certain kinds of distros that are known to cause problems by their design.  
-The Distros to avoid are unofficial derivates of Arch Linux, Ubuntu or Debian that are using altered package repositories, as they are known to cause dependency issues (especially if you throw PPA's into the mix) and are generally hard to troubleshoot.  
-Worst offenders in these terms are (absolutely non-exhaustive):
--  Arch based: [Manjaro](https://ninelore.github.io/posts/004-manjaro/)
--  Ubuntu based: Pop! OS, elementaryOS
-
-Recommended distros are
-- [Ubuntu](https://ubuntu.com/desktop) or an [official flavour](https://ubuntu.com/download/flavours) (excluding Studio for practical reasons)
-- Arch Linux or one of the following derivates that do not touch package repositories
-  - [EndeavourOS](https://endeavouros.com/)
-  - [Garuda Linux](https://garudalinux.org/)
-
 #### 5.99 I still have a problem
-More help is available on the [ArmaOnUnix Discord](https://discord.gg/p28Ra36)
+More help is available on the [ArmaOnUnix Discord](https://discord.gg/p28Ra36)  
+**Important:** Do not open a Issue in [ninelore/armaonunix](https://github.com/ninelore/armaonlinux) before asking on the Discord!
 
 ### 6. Increasing Performance
 
