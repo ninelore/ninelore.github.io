@@ -15,7 +15,7 @@ The only flaw is the non-working original launcher, which is no problem due both
 
 This new guide is based on all the knowledge that got collected up until now. This guide will get continuous Updates
 
-Last guide update: 2022-05-19 - Arma Reforger
+Last guide update: 2022-11-22 - misc. additions and fixes
 
 # Arma Reforger
 
@@ -120,7 +120,7 @@ Double check for software and driver updates as well as the spelling of the comm
 
 #### 5.99 I still have a problem
 More help is available on the [ArmaOnUnix Discord](https://discord.gg/p28Ra36)  
-**Important:** Do not open a Issue in [ninelore/armaonunix](https://github.com/ninelore/armaonlinux) before asking on the Discord!
+**Important:** Do not open a issue in [ninelore/armaonunix](https://github.com/ninelore/armaonlinux) before asking on the Discord!
 
 ### 6. Increasing Performance
 
