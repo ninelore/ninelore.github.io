@@ -1,4 +1,4 @@
-baseURL      = "https://ninelore.github.io"
+baseURL      = "https://ninelore.org"
 languageCode = "en"
 title        = "Hi, Im ninelore!"
 theme        = "hello-friend-ng"

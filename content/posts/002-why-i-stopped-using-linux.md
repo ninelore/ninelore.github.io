@@ -34,7 +34,7 @@ In Feburary 2021 I got a new laptop with hybrid graphics. Also my private situat
 - Several pieces of software I now require are not available on Linux and have no alternative that compliment my needs.
 - I don't have the time nor the storage space to make a dual-boot system 
 
-After some weeks, I am now a fan of WSL, because it helps me to develope and use my previously started projects like [Arma on Linux](https://ninelore.github.io/projects/#arma-on-linux)
+After some weeks, I am now a fan of WSL, because it helps me to develope and use my previously started projects like [Arma on Linux](/project/armaonlinux/)
 
 # The Conclusion
 
@@ -46,4 +46,4 @@ When i thought about it, there is no reason to question the validity of the work
 
 Windows has no exclusive unpopularity. There are enough people that are complaining about PulseAudio, Systemd, Electron, PHP and others. But the most of them don't deserve that, and so doesn't Windows.
 
-I hope you can understand my point of view on this topic. If you have questions, feel free to [contact me](https://ninelore.github.io/#about-me)
+I hope you can understand my point of view on this topic. If you have questions, feel free to [contact me](/about/)
