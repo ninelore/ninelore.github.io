@@ -15,7 +15,7 @@ The only flaw is the non-working original launcher, which is no problem due both
 
 This new guide is based on all the knowledge that got collected up until now. This guide will get continuous Updates
 
-Last guide update: 2022-11-22 - misc. additions and fixes
+Last guide update: 2023-07-16 - Flatpak Steam notice
 
 # Arma Reforger
 
@@ -24,11 +24,13 @@ Last guide update: 2022-11-22 - misc. additions and fixes
 If you haven't done so yet, activate Steam Play for all Games in the global Steam settings. Refer to the "Prepare" Chapter of the Arma 3 Section on how to do so.
 
 To play Arma Reforger on Linux, you'll just have to set your launch options to the following. (Refer to the Arma 3 Section again on how to do so.)
-```
+
+```sh
 echo "%command%" | sed 's/ArmaReforger_BE.exe/ArmaReforgerSteam.exe/' | sh
+
 ```
 
-Thats it, it should be playable now, assuming you have downloaded it. 
+Thats it, it should be playable now, assuming you have downloaded it.
 
 Credits for this go to HER0#0927 on Discord.
 
@@ -38,9 +40,12 @@ Credits for this go to HER0#0927 on Discord.
 
 **I don't take any responsibility if any (im)possible damage occurs on your hardware, software or your health, if you lose your job due to you being late because your alarm clock didn't ring or if a thermonuclear war breaks out. You are responsible for all changes you are making! Please read everything carefully and if needed twice to prevent misunderstandings. You can contact me via the information provided on my [website](https://ninelore.github.io)**
 
+**As of now, Flatpak Steam is __unsupported!__**
+
 ### 1. Prepare
 
 You should have
+
 - Basic terminal/Bash knowledge
 - All software and drivers up to date
 - wine-staging installed (make sure all dependencies are installed)
@@ -59,7 +64,7 @@ Now go into the Steam game settings menu and add the `%command% -nolauncher` to 
 Then go into the "Compatibility" Tab and set the Proton version again
 {{< image src="/pictures/armalinux/armaprotonversion.png" set="fit" >}}
 
-Now you can start the downlaod of Arma 3.  
+Now you can start the downlaod of Arma 3.
 
 ### 3. Starting and playing the Game
 
@@ -75,18 +80,21 @@ This is everything you need to play Arma 3 on Linux without ACRE2 or TFAR. Congr
 **Important: Make sure to start Arma at least once into the main menu before moving on!**
 
 #### 4.1 The Helper script
+
 The Arma3Helper Script (formerly Arma3TS.sh) is reqired to run ACRE2 or TFAR on Linux. It also provides utility to make some troubleshooting (see Chapter 5) easier.
 
 Place the `Arma3Helper.sh` [provided here (click me)](https://github.com/ninelore/armaonlinux) in your home directory for easy access.  
 Edit the file and adjust the settings inside the marked area in that file according to the comments.
 
 #### 4.2 Preperation for ACRE2 / TFAR
+
 The Arma3Helper script provides a wrapper for winetricks that will set the wineprefix to Arma's compatdata folder after you adjusted the settings inside the script.  
 To install a variety of DLLs/features that are required for ACRE2 / TFAR as well as fix alot of common issues, run the following command.  
 `./Arma3Helper.sh winetricks Arma`  
 For transparency: The DLLs/features installed are `d3dcompiler_43`, `d3dx10_43`, `d3dx11_43`, `mfc140` and `xact_x64`.
 
 #### 4.3 ACRE2 / TFAR
+
 Download Teamspeak 3 for **Windows x64(!)**.  
 Install Teamspeak into the compatdata directory of Arma by running  
 `./Arma3Helper.sh install path/to/TS3-Installer.exe`.  
@@ -97,55 +105,65 @@ After the insallation you can start TeamSpeak by just running `./Arma3Helper.sh`
 For TFAR you need to manually copy the plugin dll's folders into your Teamspeak path (`c/Program Files/TeamSpeak 3 Client/plugins/`). Note that a `.ts3plugin` file is nothing but a ZIP with a different extension. Just unzip it with the tool of your choice.
 
 ### 5. Troubleshooting
+
 Note: Some troubleshooting steps require the Arma3Helper script. See Chapter 4.1 for more info. Alternatively you can use [protontricks](https://github.com/Matoking/protontricks).
 
-#### 5.1 I have problems with sound and/or thermal vision  
-See Chapter 4.2  
+#### 5.1 I have problems with sound and/or thermal vision
+
+See Chapter 4.2
 
 #### 5.2 I still have problems with sound (**only for Proton 6.3 and older!**)
+
 You have 2 options to achieve the same fix.  
 You can set the enviromental variable `WINEDLLOVERRIDES="xaudio2_7=n"` in the Steam startup options (or via the Arma 3 Unix Launcher).  
 {{< image src="/pictures/armalinux/armalaunchoptions-xaudio.png" >}}  
 The other way is to set it via `./Arma3Helper.sh winecfg` and then under "Libraries".  
-{{< image src="/pictures/armalinux/winecfg-xaudio.png" >}}  
+{{< image src="/pictures/armalinux/winecfg-xaudio.png" >}}
 
 #### 5.3 Arma doesnt open or crashes instantly
+
 Run the following command depending on your linux distro to install possibly missing dependencies  
 Arch Linux based: `sudo pacman -S vulkan-tools`  
 Debian/Ubuntu based: `sudo apt install mesa-vulkan-drivers vulkan-utils`  
 Fedora: `sudo dnf install mesa-vulkan-drivers vulkan-tools`
 
 #### 5.4 Command X returns error Y
+
 Double check for software and driver updates as well as the spelling of the commands and the settings. If you still got errors continue to Chapter 5.99
 
 #### 5.99 I still have a problem
+
 More help is available on the [ArmaOnUnix Discord](https://discord.gg/p28Ra36)  
 **Important:** Do not open a issue in [ninelore/armaonunix](https://github.com/ninelore/armaonlinux) before asking on the Discord!
 
 ### 6. Increasing Performance
 
 #### 6.1 Additional Launch Parameters
-Try a combination of one or more of the following to see what works for you the best. Set them as desired via the Arma 3 Unix Launcher or add them to the Steam command line.
--  `-noSplash` No splash screens. Game startup speedup.
--  `-skipIntro` Static Background for main manu. Minor game startup speedup.
--  `-world=empty` Load an empty world for main menu background. Significant game startup speedup.
--  `-exThreads=3` for 2 CPU cores or `-exThreads=7` for 4 cores or more; Offloads some work onto different threads. Usually a minor FPS Increase.
--  `-enableHT` enables use of logical cores instead of only physical cores. May improve or harm FPS depending of your PC. Try if it works for you. This is overwritten by `-cpuCount`.
--  `-hugepages` Enable huge page size for memory allocation. Try if it works for you.
--  `-noLogs` Not having to write logs may increase performance, but be sure to disable this if you need to troubleshoot problems.
--  `-malloc=<string>` Use a particular Memory Allocator (for advanced users, more info [here](https://community.bistudio.com/wiki/Arma_3:_Custom_Memory_Allocator)).
 
--  `-cpuCount=1` Reportedly solves some issure for some people but might decrease performance. NOTE: This should be fixed on the arma perf branch and will find its way into the release branch of Arma soon.
+Try a combination of one or more of the following to see what works for you the best. Set them as desired via the Arma 3 Unix Launcher or add them to the Steam command line.
+
+- `-noSplash` No splash screens. Game startup speedup.
+- `-skipIntro` Static Background for main manu. Minor game startup speedup.
+- `-world=empty` Load an empty world for main menu background. Significant game startup speedup.
+- `-exThreads=3` for 2 CPU cores or `-exThreads=7` for 4 cores or more; Offloads some work onto different threads. Usually a minor FPS Increase.
+- `-enableHT` enables use of logical cores instead of only physical cores. May improve or harm FPS depending of your PC. Try if it works for you. This is overwritten by `-cpuCount`.
+- `-hugepages` Enable huge page size for memory allocation. Try if it works for you.
+- `-noLogs` Not having to write logs may increase performance, but be sure to disable this if you need to troubleshoot problems.
+- `-malloc=<string>` Use a particular Memory Allocator (for advanced users, more info [here](https://community.bistudio.com/wiki/Arma_3:_Custom_Memory_Allocator)).
+- `-cpuCount=1` Reportedly solves some issure for some people but might decrease performance. NOTE: This should be fixed on the arma perf branch and will find its way into the release branch of Arma soon.
 
 #### 6.2 General Linux gaming optimizations
+
 Note: These Tips aren't exclusive to Arma, but will apply to almost all Linux gaming.
+
 - Use a non-standard kernel:
-  - Arch Linux oficially supports the `linux-zen` kernel in its repositories
-  - Debian / Ubuntu users can try the [Liquorix](https://liquorix.net/) or [XanMod](https://xanmod.org/) kernels
-  - Advanced users can build a customized kernel for their system with the help of [linux-tkg](https://github.com/Frogging-Family/linux-tkg)
+   - Arch Linux oficially supports the `linux-zen` kernel in its repositories
+   - Debian / Ubuntu users can try the [Liquorix](https://liquorix.net/) or [XanMod](https://xanmod.org/) kernels
+   - Advanced users can build a customized kernel for their system with the help of [linux-tkg](https://github.com/Frogging-Family/linux-tkg)
+
 - Use different desktop enviroment or optimize a slow one:
-  - KDE Plasma users can replace `kwin` with `kwin-lowlatency`
-  - You might want to switch to a slimmer desktop enviroment like XFCE, LXQt or a bare window manager setup (advanced users)
+   - KDE Plasma users can replace `kwin` with `kwin-lowlatency`
+   - You might want to switch to a slimmer desktop enviroment like XFCE, LXQt or a bare window manager setup (advanced users)
 
 ### Epilogue
 
