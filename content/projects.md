@@ -5,9 +5,11 @@ draft: false
 ---
 
 ## Current
+
 - ### [Play Arma on Linux](/project/armaonlinux/)
-- ### [Build AndroidAPS in a terminal without Android Studio](/project/aaps-term-build/)
 
 ## Archived
+
+- ### [Build AndroidAPS in a terminal without Android Studio](/project/aaps-term-build/)
 
 [Broken links?](/project)
