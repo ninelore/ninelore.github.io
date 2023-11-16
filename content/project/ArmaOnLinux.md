@@ -10,12 +10,12 @@ A few months and improvements to Proton after its first release, i had the first
 
 Since Proton 4.11 as good as all tweaks needed to run Arma became obsolete, and it became as easy as never before to play not only Arma and Steam Games, but also non-Steam games because of many Proton improvements being up streamed to Wine. You can check if your games are working on the Lutris website, the WineHQ and the ProtonDB websites.
 
-With the release of Proton 6.3-8, the last major burden, BattleEye, is now working and we can play Arma 3 on Linux without **any** restriction!  
-The only flaw is the non-working original launcher, which is no problem due both the Arma 3 devs working on the problem and the excellent work of some amazing people that made amazing 3rd-party launchers.
+With the release of Proton 6.3-8, the last major burden, BattleEye, is now working and we can play Arma 3 on Linux without **any** restriction!
+As of 2023, the official Arma launcher also works on Linux using Proton.
 
 This new guide is based on all the knowledge that got collected up until now. This guide will get continuous Updates
 
-Last guide update: 2023-07-16 - Flatpak Steam notice
+Last guide update: 2023-11-15 - TeamSpeak Gamepad plugin notice, the official launcher is now usable
 
 # Arma Reforger
 
@@ -70,7 +70,7 @@ Now you can start the downlaod of Arma 3.
 
 When the download is finished, start the game once and exit it again after reaching the main menu.
 
-Now you need a launcher to manage Mods and launch options. I highly recommend using the [Arma 3 Unix Launcher by muttleyxd](https://github.com/muttleyxd/arma3-unix-launcher).  
+Now you need a launcher to manage Mods and launch options. I highly recommend using the [Arma 3 Unix Launcher by muttleyxd](https://github.com/muttleyxd/arma3-unix-launcher) instead of the official launcher.
 Download: [Arch Linux AUR](https://aur.archlinux.org/packages/arma3-unix-launcher-bin) | [as .deb or .AppImage](https://github.com/muttleyxd/arma3-unix-launcher/releases/latest)
 
 This is everything you need to play Arma 3 on Linux without ACRE2 or TFAR. Congratulations to get this far. ;)
@@ -101,6 +101,8 @@ Install Teamspeak into the compatdata directory of Arma by running
 **IMPORTANT: In the Teamspeak installer, select "Install for all Users" and leave the default path!!!**
 
 After the insallation you can start TeamSpeak by just running `./Arma3Helper.sh` **After you have started Arma**.
+
+Before joining a TeamSpeak server, disable the "Gamepad and Joystick Hotkey Support" plugin to prevent it from crashing.
 
 For TFAR you need to manually copy the plugin dll's folders into your Teamspeak path (`c/Program Files/TeamSpeak 3 Client/plugins/`). Note that a `.ts3plugin` file is nothing but a ZIP with a different extension. Just unzip it with the tool of your choice.
 
