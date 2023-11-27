@@ -4,7 +4,7 @@ date: 2021-03-22T21:39:17+01:00
 draft: false
 ---
 
-# Preamble:
+## Preamble
 
 A few months and improvements to Proton after its first release, i had the first known, good working Arma installation on Linux.
 
@@ -15,9 +15,13 @@ As of 2023, the official Arma launcher also works on Linux using Proton.
 
 This new guide is based on all the knowledge that got collected up until now. This guide will get continuous Updates
 
-Last guide update: 2023-11-15 - TeamSpeak Gamepad plugin notice, the official launcher is now usable
+Last guide update: 2023-11-15 - Licensed, see below
 
-# Arma Reforger
+## Notice
+
+**As of 2023-11-27, this guide is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)**
+
+## Arma Reforger
 
 ### 1. Prepare
 
@@ -34,7 +38,7 @@ Thats it, it should be playable now, assuming you have downloaded it.
 
 Credits for this go to HER0#0927 on Discord.
 
-# Arma 3
+## Arma 3
 
 ### 0. Disclaimer
 
@@ -106,7 +110,7 @@ Before joining a TeamSpeak server, disable the "Gamepad and Joystick Hotkey Supp
 
 For TFAR you need to manually copy the plugin dll's folders into your Teamspeak path (`c/Program Files/TeamSpeak 3 Client/plugins/`). Note that a `.ts3plugin` file is nothing but a ZIP with a different extension. Just unzip it with the tool of your choice.
 
-### 5. Troubleshooting
+### 5. TroubleshTeamSpeak Gamepad plugin notice, the official launcher is now usableooting
 
 Note: Some troubleshooting steps require the Arma3Helper script. See Chapter 4.1 for more info. Alternatively you can use [protontricks](https://github.com/Matoking/protontricks).
 
@@ -159,13 +163,13 @@ Try a combination of one or more of the following to see what works for you the 
 Note: These Tips aren't exclusive to Arma, but will apply to almost all Linux gaming.
 
 - Use a non-standard kernel:
-   - Arch Linux oficially supports the `linux-zen` kernel in its repositories
-   - Debian / Ubuntu users can try the [Liquorix](https://liquorix.net/) or [XanMod](https://xanmod.org/) kernels
-   - Advanced users can build a customized kernel for their system with the help of [linux-tkg](https://github.com/Frogging-Family/linux-tkg)
+  - Arch Linux oficially supports the `linux-zen` kernel in its repositories
+  - Debian / Ubuntu users can try the [Liquorix](https://liquorix.net/) or [XanMod](https://xanmod.org/) kernels
+  - Advanced users can build a customized kernel for their system with the help of [linux-tkg](https://github.com/Frogging-Family/linux-tkg)
 
 - Use different desktop enviroment or optimize a slow one:
-   - KDE Plasma users can replace `kwin` with `kwin-lowlatency`
-   - You might want to switch to a slimmer desktop enviroment like XFCE, LXQt or a bare window manager setup (advanced users)
+  - KDE Plasma users can replace `kwin` with `kwin-lowlatency`
+  - You might want to switch to a slimmer desktop enviroment like XFCE, LXQt or a bare window manager setup (advanced users)
 
 ### Epilogue
 
