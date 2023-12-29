@@ -110,7 +110,7 @@ Before joining a TeamSpeak server, disable the "Gamepad and Joystick Hotkey Supp
 
 For TFAR you need to manually copy the plugin dll's folders into your Teamspeak path (`c/Program Files/TeamSpeak 3 Client/plugins/`). Note that a `.ts3plugin` file is nothing but a ZIP with a different extension. Just unzip it with the tool of your choice.
 
-### 5. TroubleshTeamSpeak Gamepad plugin notice, the official launcher is now usableooting
+### 5. Troubleshooting
 
 Note: Some troubleshooting steps require the Arma3Helper script. See Chapter 4.1 for more info. Alternatively you can use [protontricks](https://github.com/Matoking/protontricks).
 
@@ -162,14 +162,11 @@ Try a combination of one or more of the following to see what works for you the 
 
 Note: These Tips aren't exclusive to Arma, but will apply to almost all Linux gaming.
 
-- Use a non-standard kernel:
-  - Arch Linux oficially supports the `linux-zen` kernel in its repositories
-  - Debian / Ubuntu users can try the [Liquorix](https://liquorix.net/) or [XanMod](https://xanmod.org/) kernels
-  - Advanced users can build a customized kernel for their system with the help of [linux-tkg](https://github.com/Frogging-Family/linux-tkg)
-
 - Use different desktop enviroment or optimize a slow one:
   - KDE Plasma users can replace `kwin` with `kwin-lowlatency`
   - You might want to switch to a slimmer desktop enviroment like XFCE, LXQt or a bare window manager setup (advanced users)
+
+- Advanced users can build a customized kernel for their system with the help of [linux-tkg](https://github.com/Frogging-Family/linux-tkg) for performance gains
 
 ### Epilogue
 
