@@ -1,4 +1,4 @@
-baseURL      = "https://ninelore.org"
+baseURL      = "https://9lo.re/"
 languageCode = "en"
 title        = "Hi, Im ninelore!"
 theme        = "hello-friend-ng"
@@ -59,8 +59,8 @@ paginate     = 10
     url  = "https://github.com/ninelore"
 
 [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/neinlore"
+    name = "mastodon"
+    url  = "https://donotsta.re/9lore"
 
 
 [languages]
