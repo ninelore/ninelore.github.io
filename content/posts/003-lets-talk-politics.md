@@ -19,6 +19,7 @@ Wir können nur hoffen das das Versprochene druchgesetzt wird und die Schande de
 Ich hatte letztens eine Debatte mit einem Freund über die Klima-Konferenz COP26 in Glasgow. Er argumentierte das die FFF Proteste sämtliche Corona-Schutzmaßnahmen gebrochen haben und somit viele Menschen gefährdet haben.Er hat zwar recht damit, aber im Nachhinein denke ich das diese Proteste trotzdem richtig waren. Zum einen wegen der Dringlichkeit des von Klimaschutz und die katastrophalen Folgen wenn wir versagen, aber auch wegen einer anderen, zugegebenrmaßen extremeren persönlichen Meinung, über die ich zur Zeit nicht sprechen möchte.
 
 Aber genug von Deutschland. Es gibt genug andere Besorgniserregende Konflikte wie
+
 - Der erneut aufflammende Russland-Ukraine Komflikt mit dem größtem Truppenaufmarsch seid 2014  
 - Chinas Anspruch auf Taiwan und zahllose Inseln im Südchinesischem Meer, die zu anderen Ländern wie zum Beispiel den Phillipinen angehören  
 Diese Brennpunkte haben das Potential jederzeit zu blutigen Kriegen zu werden, was mir echt Angst macht.

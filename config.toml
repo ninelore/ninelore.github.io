@@ -1,82 +1,82 @@
-baseURL      = "https://9lo.re/"
+baseURL = "https://9lo.re/"
 languageCode = "en"
-title        = "Hi, Im ninelore!"
-theme        = "hello-friend-ng"
-paginate     = 10
+title = "Hi, Im ninelore!"
+theme = "hello-friend-ng"
+paginate = 10
 
 [params]
-    dateform        = "Jan 2, 2006"
-    dateformShort   = "Jan 2"
-    dateformNum     = "2006-01-02"
-    dateformNumTime = "2006-01-02 15:04"
-    homeSubtitle = "Just a human being..."
-    # Set disableReadOtherPosts to true in order to hide the links to other posts.
-    disableReadOtherPosts = false
-    # Enable sharing buttons, if you like
-    enableSharingButtons = true
+dateform = "Jan 2, 2006"
+dateformShort = "Jan 2"
+dateformNum = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04"
+homeSubtitle = "Just a human being..."
+# Set disableReadOtherPosts to true in order to hide the links to other posts.
+disableReadOtherPosts = false
+# Enable sharing buttons, if you like
+enableSharingButtons = true
 
-    # Metadata mostly used in document's head
-    description = "ninelore's homepage"
-    keywords = "homepage, personal, blog"
-    images = [""]
-    subtitle = "Just a human being..."
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-    readOtherPosts = "Read other posts"
+# Metadata mostly used in document's head
+description = "ninelore's homepage"
+keywords = "homepage, personal, blog"
+images = [""]
+subtitle = "Just a human being..."
+copyright = '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>'
+readOtherPosts = "Read other posts"
 
 [params.author]
-  name = "ninelore"
+name = "ninelore"
 
 [taxonomies]
-    category = "blog"
-    tag      = "tags"
-    series   = "series"
-    
+category = "blog"
+tag = "tags"
+series = "series"
+
 [params.logo]
-    logoText = "  "
-    logoHomeLink = "/"
-    ## or
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
+logoText = "9lo.re ~ $"
+logoHomeLink = "/"
+## or
+# path = "/img/your-example-logo.svg"
+# alt = "Your example logo alt text"
 
 [params.footer]
-    trademark = true
-    copyright = true
-    author = true
+trademark = true
+copyright = true
+author = false
 
-    topText = []
-    bottomText = []
-    
-[[params.social]]
-    name = "email"
-    url  = "mailto:ninelore@protonmail.com"
+topText = []
+bottomText = []
 
 [[params.social]]
-    name = "discord"
-    url  = "https://discord.gg/uW32NEh"
+name = "email"
+url = "mailto:ninelore@protonmail.com"
 
 [[params.social]]
-    name = "github"
-    url  = "https://github.com/ninelore"
+name = "discord"
+url = "https://discord.gg/uW32NEh"
 
 [[params.social]]
-    name = "mastodon"
-    url  = "https://donotsta.re/9lore"
+name = "github"
+url = "https://github.com/ninelore"
+
+[[params.social]]
+name = "mastodon"
+url = "https://donotsta.re/9lore"
 
 
 [languages]
-     [languages.en]
-        copyright = '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>'
+[languages.en]
+copyright = '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>'
 
 # And you can even create generic menu
 [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
+identifier = "blog"
+name = "Blog"
+url = "/posts"
 [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "/about"
+identifier = "about"
+name = "About"
+url = "/about"
 [[menu.main]]
-    identifier = "projects"
-    name       = "Projects"
-    url        = "/projects"
+identifier = "projects"
+name = "Projects"
+url = "/projects"

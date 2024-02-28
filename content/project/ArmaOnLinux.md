@@ -23,7 +23,7 @@ Last guide update: 2023-11-15 - Licensed, see below
 
 ## Arma Reforger
 
-### 1. Prepare
+### 1. Prepare (Reforger)
 
 If you haven't done so yet, activate Steam Play for all Games in the global Steam settings. Refer to the "Prepare" Chapter of the Arma 3 Section on how to do so.
 
@@ -46,7 +46,7 @@ Credits for this go to HER0#0927 on Discord.
 
 **As of now, Flatpak Steam is __unsupported!__**
 
-### 1. Prepare
+### 1. Prepare (Arma 3)
 
 You should have
 
