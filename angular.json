@@ -92,9 +92,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/prismjs/themes/prism-okaidia.css"
             ],
             "scripts": [
+              "./node_modules/prismjs/prism.js",
+              "./node_modules/prismjs/components/index.js",
               "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           }
