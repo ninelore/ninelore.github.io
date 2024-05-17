@@ -15,7 +15,7 @@ As of 2023, the official Arma launcher also works on Linux using Proton.
 
 This new guide is based on all the knowledge that got collected up until now. This guide will get continuous Updates
 
-Last guide update: 2023-11-15 - Licensed, see below
+Last guide update: 2024-05-17 - removed outdated stuff
 
 ## Notice
 
