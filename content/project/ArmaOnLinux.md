@@ -44,8 +44,6 @@ Credits for this go to HER0#0927 on Discord.
 
 **I don't take any responsibility if any (im)possible damage occurs on your hardware, software or your health, if you lose your job due to you being late because your alarm clock didn't ring or if a thermonuclear war breaks out. You are responsible for all changes you are making! Please read everything carefully and if needed twice to prevent misunderstandings. You can contact me via the information provided on my [website](https://ninelore.github.io)**
 
-**As of now, Flatpak Steam is __unsupported!__**
-
 ### 1. Prepare (Arma 3)
 
 You should have
@@ -161,10 +159,6 @@ Try a combination of one or more of the following to see what works for you the 
 #### 6.2 General Linux gaming optimizations
 
 Note: These Tips aren't exclusive to Arma, but will apply to almost all Linux gaming.
-
-- Use different desktop enviroment or optimize a slow one:
-  - KDE Plasma users can replace `kwin` with `kwin-lowlatency`
-  - You might want to switch to a slimmer desktop enviroment like XFCE, LXQt or a bare window manager setup (advanced users)
 
 - Advanced users can build a customized kernel for their system with the help of [linux-tkg](https://github.com/Frogging-Family/linux-tkg) for performance gains
 
