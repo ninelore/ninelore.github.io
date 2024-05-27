@@ -1,6 +1,6 @@
 baseURL = "https://9lo.re/"
 languageCode = "en"
-title = "Hi, Im ninelore!"
+title = "Hi, I'm ninelore!"
 theme = "hello-friend-ng"
 paginate = 10
 
