@@ -20,7 +20,7 @@ description = "ninelore's homepage"
 keywords = "homepage, personal, blog"
 images = [""]
 subtitle = "Just a human being..."
-copyright = '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>'
+copyright = 'Content: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> | Code: <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank" rel="noopener">AGPL 3 only</a>'
 readOtherPosts = "Read other posts"
 
 [params.author]
@@ -65,7 +65,7 @@ url = "https://donotsta.re/9lore"
 
 [languages]
 [languages.en]
-copyright = '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>'
+copyright = 'Content: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> | Code: <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank" rel="noopener">AGPL 3</a>'
 
 # And you can even create generic menu
 [[menu.main]]
