@@ -1,6 +1,6 @@
 ---
 title: "Blog Cleanup"
-date: 2021-03-22T19:37:24+01:00
+date: 2024-07-11T19:31:01+02:00
 draft: false
 ---
 
