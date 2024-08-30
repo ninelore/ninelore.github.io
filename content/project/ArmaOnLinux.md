@@ -97,16 +97,16 @@ For transparency: The DLLs/features installed are `d3dcompiler_43`, `d3dx10_43`,
 
 #### 4.3 ACRE2 / TFAR
 
-Download Teamspeak 3 for **Windows x64(!)**.  
-Install Teamspeak into the compatdata directory of Arma by running  
+Download TeamSpeak 3 for **Windows x64(!)**.  
+Install TeamSpeak 3 into the compatdata directory of Arma by running  
 `./Arma3Helper.sh install path/to/TS3-Installer.exe`.  
-**IMPORTANT: In the Teamspeak installer, select "Install for all Users" and leave the default path!!!**
+**IMPORTANT: In the TeamSpeak installer, select "Install for all Users" and leave the default path!!!**
 
-After the insallation you can start TeamSpeak by just running `./Arma3Helper.sh` **After you have started Arma**.
+After the insallation you can start TeamSpeak 3 by just running `./Arma3Helper.sh` **After you have started Arma**.
 
-Before joining a TeamSpeak server, disable the "Gamepad and Joystick Hotkey Support" plugin to prevent it from crashing.
+Before joining a TeamSpeak 3 server, disable the "Gamepad and Joystick Hotkey Support" plugin to prevent it from crashing.
 
-For TFAR you need to manually copy the plugin dll's folders into your Teamspeak path (`c/Program Files/TeamSpeak 3 Client/plugins/`). Note that a `.ts3plugin` file is nothing but a ZIP with a different extension. Just unzip it with the tool of your choice.
+For TFAR you need to manually copy the plugin dll's folders into your TeamSpeak 3 path (`c/Program Files/TeamSpeak 3 Client/plugins/`). Note that a `.ts3plugin` file is nothing but a ZIP with a different extension. Just unzip it with the tool of your choice.
 
 ### 5. Troubleshooting
 
