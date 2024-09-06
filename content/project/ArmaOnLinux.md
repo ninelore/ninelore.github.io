@@ -19,7 +19,7 @@ Last guide update: 2024-05-17 - removed outdated stuff
 
 ## Notice
 
-**As of 2023-11-27, this guide is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)**
+**As of 2024, this guide is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**
 
 ## Arma Reforger
 
