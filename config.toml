@@ -41,20 +41,20 @@ topText = []
 bottomText = []
 
 [[params.social]]
-name = "email"
-url = "mailto:9l@9lo.re"
-
-[[params.social]]
-name = "discord"
-url = "https://discord.gg/VSeCEVCTk6"
-
-[[params.social]]
 name = "github"
 url = "https://github.com/ninelore"
 
 [[params.social]]
+name = "email"
+url = "mailto:9l@9lo.re"
+
+[[params.social]]
 name = "mastodon"
 url = "https://donotsta.re/9lore"
+
+[[params.social]]
+name = "discord"
+url = "https://discord.gg/VSeCEVCTk6"
 
 
 [languages]
