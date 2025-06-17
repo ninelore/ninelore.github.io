@@ -1,9 +1,3 @@
----
-title: "Play Arma on Linux"
-date: 2021-03-22T21:39:17+01:00
-draft: false
----
-
 ## Preamble
 
 A few months and improvements to Proton after its first release, i had the first known, good working Arma installation on Linux.
@@ -58,13 +52,16 @@ You should have
 Do the following before starting to download Arma!
 
 Go into Steam settings and then click on "Steam Play". Check both boxes and choose the newest Proton version available (not Experimental)
-{{< image src="/pictures/armalinux/steamplaysettings.png" set="fit" >}}
+
+![](/pictures/armalinux/steamplaysettings.png)
 
 Now go into the Steam game settings menu and add the `%command% -nolauncher` to the launch options
-{{< image src="/pictures/armalinux/armalaunchoptions.png" set="fit" >}}
+
+![](/pictures/armalinux/armalaunchoptions.png)
 
 Then go into the "Compatibility" Tab and set the Proton version again
-{{< image src="/pictures/armalinux/armaprotonversion.png" set="fit" >}}
+
+![](/pictures/armalinux/armaprotonversion.png)
 
 Now you can start the downlaod of Arma 3.
 
@@ -119,10 +116,13 @@ See Chapter 4.2
 #### 5.2 I still have problems with sound (**only for Proton 6.3 and older!**)
 
 You have 2 options to achieve the same fix.  
-You can set the enviromental variable `WINEDLLOVERRIDES="xaudio2_7=n"` in the Steam startup options (or via the Arma 3 Unix Launcher).  
-{{< image src="/pictures/armalinux/armalaunchoptions-xaudio.png" >}}  
-The other way is to set it via `./Arma3Helper.sh winecfg` and then under "Libraries".  
-{{< image src="/pictures/armalinux/winecfg-xaudio.png" >}}
+You can set the enviromental variable `WINEDLLOVERRIDES="xaudio2_7=n"` in the Steam startup options (or via the Arma 3 Unix Launcher)
+
+![](/pictures/armalinux/armalaunchoptions-xaudio.png)
+
+The other way is to set it via `./Arma3Helper.sh winecfg` and then under "Libraries".
+
+![](/pictures/armalinux/winecfg-xaudio.png)
 
 #### 5.3 Arma doesnt open or crashes instantly
 
