@@ -20,6 +20,8 @@
   "homepage": "https://github.com/ninelore/ninelore.github.io#readme",
   "type": "module",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.1"
+    "@11ty/eleventy": "^3.1.1",
+    "bootstrap": "^5.3.7",
+    "sass": "^1.89.2"
   }
 }
