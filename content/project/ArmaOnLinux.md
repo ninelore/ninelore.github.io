@@ -93,7 +93,7 @@ Edit the file and adjust the settings inside the marked area in that file accord
 The Arma3Helper script provides a wrapper for winetricks that will set the wineprefix to Arma's compatdata folder after you adjusted the settings inside the script.  
 To install a variety of DLLs/features that are required for ACRE2 / TFAR as well as fix alot of common issues, run the following command.  
 `./Arma3Helper.sh winetricks Arma`  
-For transparency: The DLLs/features installed are `d3dcompiler_43`, `d3dx10_43`, `d3dx11_43`, `mfc140` and `xact_x64`.
+For transparency: The DLLs/features installed are `d3dcompiler_43`, `d3dx10_43`, `d3dx11_43`, `mfc140`, `xact_x64` and `xaudio29`.
 
 #### 4.3 ACRE2 / TFAR
 
